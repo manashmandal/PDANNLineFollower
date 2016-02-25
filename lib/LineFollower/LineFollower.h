@@ -36,6 +36,10 @@ using namespace std;
 //Threshold
 #define THRESHOLD 500
 
+//add and subtract from or to this speed
+#define spd 70
+#define spd_factor 5
+
 //define input and output macro
 #define input(pin) pinMode(pin, INPUT)
 #define output(pin) pinMode(pin, OUTPUT)
@@ -113,6 +117,10 @@ public:
 	void read_sensors(void);
 	int read_line(void);
 	void clear_reading(void);
+	void differential_drive(void);
+
+	int calculate_left_speed(void);
+	int calculate_right_speed(void);
 
 };
 

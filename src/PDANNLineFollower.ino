@@ -27,5 +27,6 @@ void loop()
   // LineFollowingRobot.wireless_control();
   // LineFollowingRobot.debug();
   // LineFollowingRobot.wireless_debug();
-  LineFollowingRobot.wireless_control();
+  // LineFollowingRobot.wireless_control();
+  LineFollowingRobot.differential_drive();
 }

@@ -17,6 +17,7 @@ void LineFollower::init(void)
   motors_init();
   sensors_init();
   serial_init(BAUD);
+  defaultSpeed = 120;
 }
 
 //========== MOTOR SECTION ==============
@@ -282,9 +283,45 @@ int LineFollower::read_line(void)
   read_sensors();
   for (u_int i = 0; i < sensors.size(); i++)
   {
-    totalWeight += digitalReading[i] * MULTIPLIER;
+    totalWeight += (i + 1) * digitalReading[i] * MULTIPLIER;
   }
   return (totalWeight / activeSensors);
+}
+
+
+int LineFollower::calculate_left_speed(void)
+{
+  int pos = read_line();
+  Bluetooth.println("Right pos: " + String(pos));
+  if (pos == 3000 || pos == 4000) return defaultSpeed;
+  else if (pos >= 0 && pos < 3000) return 0;
+  else if (pos > 4000 && pos <= 6500)
+  {
+    int factor = ((pos - 4000) / 500);
+    return ((spd + factor * spd_factor));
+  }
+}
+
+int LineFollower::calculate_right_speed(void)
+{
+  int pos = read_line();
+  Bluetooth.println("Left pos: " + String(pos));
+  if (pos == 3000 || pos == 4000) return defaultSpeed;
+  else if (pos > 4000 && pos <= 6500) return 0;
+  else if (pos >= 0 && pos < 3000)
+  {
+    int factor = ((3000 - pos) / 500);
+    return (spd + (factor * spd_factor));
+  }
+}
+
+void LineFollower::differential_drive(void)
+{
+  leftSpeed = calculate_left_speed();
+  rightSpeed = calculate_right_speed();
+  Bluetooth.println("left: " + String(leftSpeed));
+  Bluetooth.println("right: " + String(rightSpeed));
+  set_motors(leftSpeed, rightSpeed);
 }
 
 /*
