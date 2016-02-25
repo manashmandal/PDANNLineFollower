@@ -18,6 +18,8 @@ void LineFollower::init(void)
   sensors_init();
   serial_init(BAUD);
   defaultSpeed = DEFAULT_SPEED;
+  input(0);
+  input(7);
 }
 
 //========== MOTOR SECTION ==============
@@ -328,7 +330,8 @@ void LineFollower::differential_drive(void)
 {
   int pos = read_line();
 
-  if (pos == 3000 || pos == 4000)
+
+  if (pos == 3000 || pos == 4000 || pos == 3500)
   {
     forward(defaultSpeed, defaultSpeed);
   }
@@ -374,9 +377,31 @@ void LineFollower::differential_drive(void)
     left(add_speed + 4 * speed_factor);
   }
 
-  else stop();
+  if ((check_left_turn() && !check_right_turn())
+      || (!check_left_turn() && check_right_turn())
+    )
+  {
+    if (check_left_turn()){
+      while(read_line() < 0) anticlockwise(defaultSpeed, defaultSpeed);
+    } else if (check_right_turn()){
+      while(read_line() < 0) clockwise(defaultSpeed, defaultSpeed);
+    }
+  }
 
+}
 
+bool LineFollower::check_left_turn(void)
+{
+  int leftReading = analogRead(7);
+  if (leftReading > THRESHOLD) return true;
+  else return false;
+}
+
+bool LineFollower::check_right_turn(void)
+{
+  int rightReading = analogRead(0);
+  if (rightReading > THRESHOLD) return true;
+  else return false;
 }
 
 /*

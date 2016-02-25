@@ -107,6 +107,9 @@ public:
 	void anticlockwise(u_int lspeed, u_int rspeed);
 	void clockwise(u_int lspeed, u_int rspeed);
 
+	bool check_left_turn(void);
+	bool check_right_turn(void);
+
 	//Bluetooth control
 	void wireless_control(void);
 	void wireless_control(bool debug_mode);
