@@ -203,7 +203,7 @@ void LineFollower::debug(void)
   short_delay;
 
   cout << " ======= DIGITAL READING ======= " << endl;
-  read_line();
+  read_sensors();
   short_delay;
   for (u_int i = 0; i < sensors.size(); i++)
   {
@@ -230,7 +230,7 @@ void LineFollower::wireless_debug(void)
   short_delay;
 
   Bluetooth.println(" ==== DIGITAL READING START === ");
-  read_line();
+  read_sensors();
   short_delay;
   for (u_int i = 0; i < sensors.size(); i++)
   {
@@ -239,6 +239,7 @@ void LineFollower::wireless_debug(void)
   Bluetooth.println();
   Bluetooth.println("====== DIGITAL READING END ======");
   Bluetooth.println();
+  Bluetooth.println("Calculated position: " + String(read_line()));
   Bluetooth.println();
   long_delay;
 }
@@ -248,10 +249,11 @@ void LineFollower::wireless_debug(void)
 // LINE FOLLOWING CONTROL
 */
 
-void LineFollower::read_line(void)
+void LineFollower::read_sensors(void)
 {
   digitalReading.clear();
   analogReading.clear();
+  activeSensors = 0;
   for (u_int i = 0; i < sensors.size(); i++)
   {
     u_int reading = analogRead(sensors[i]);
@@ -268,6 +270,22 @@ void LineFollower::read_line(void)
   }
 }
 
+void LineFollower::clear_reading(void)
+{
+  digitalReading.clear();
+  analogReading.clear();
+}
+
+int LineFollower::read_line(void)
+{
+  u_int totalWeight = 0;
+  read_sensors();
+  for (u_int i = 0; i < sensors.size(); i++)
+  {
+    totalWeight += digitalReading[i] * MULTIPLIER;
+  }
+  return (totalWeight / activeSensors);
+}
 
 /*
 //  =========== CONSTRUCTOR ==========

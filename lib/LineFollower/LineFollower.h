@@ -24,6 +24,7 @@ using namespace std;
 
 #define BAUD 9600
 #define DEFAULT_SPEED 130
+#define MULTIPLIER 1000
 
 #define RX 10
 #define TX 11
@@ -109,7 +110,10 @@ public:
 
 
 	//Line Following control
-	void read_line(void);
+	void read_sensors(void);
+	int read_line(void);
+	void clear_reading(void);
+
 };
 
 extern LineFollower LineFollowingRobot;
