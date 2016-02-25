@@ -17,7 +17,7 @@ void LineFollower::init(void)
   motors_init();
   sensors_init();
   serial_init(BAUD);
-  defaultSpeed = 120;
+  defaultSpeed = DEFAULT_SPEED;
 }
 
 //========== MOTOR SECTION ==============
@@ -161,6 +161,11 @@ void LineFollower::stop(void)
   }
 }
 
+void LineFollower::set_speed(u_int dSpeed)
+{
+  defaultSpeed = dSpeed;
+}
+
 
 /*
 ========= SENSOR ==============
@@ -298,7 +303,9 @@ int LineFollower::calculate_left_speed(void)
   else if (pos > 4000 && pos <= 6500)
   {
     int factor = ((pos - 4000) / 500);
-    return ((spd + factor * spd_factor));
+    int speed = spd + (factor * spd_factor);
+    Bluetooth.println("left spd: " + String(speed));
+    return speed;
   }
 }
 
@@ -311,17 +318,65 @@ int LineFollower::calculate_right_speed(void)
   else if (pos >= 0 && pos < 3000)
   {
     int factor = ((3000 - pos) / 500);
-    return (spd + (factor * spd_factor));
+    int speed = spd + (factor * spd_factor);
+    Bluetooth.println("right spd: " + String(speed));
+    return speed;
   }
 }
 
 void LineFollower::differential_drive(void)
 {
-  leftSpeed = calculate_left_speed();
-  rightSpeed = calculate_right_speed();
-  Bluetooth.println("left: " + String(leftSpeed));
-  Bluetooth.println("right: " + String(rightSpeed));
-  set_motors(leftSpeed, rightSpeed);
+  int pos = read_line();
+
+  if (pos == 3000 || pos == 4000)
+  {
+    forward(defaultSpeed, defaultSpeed);
+  }
+
+  else if (pos > 4000 && pos < 5000)
+  {
+    right(add_speed + 1 * speed_factor);
+  }
+
+  else if (pos >= 5000 && pos < 5500)
+  {
+    right(add_speed + 2 * speed_factor);
+  }
+
+  else if (pos >= 5500  && pos < 6000)
+  {
+    right(add_speed + 3 * speed_factor);
+  }
+
+  else if (pos >= 6000 && pos < 7000)
+  {
+    right(add_speed + 4 * speed_factor);
+  }
+
+  //left
+  else if (pos >= 2500 && pos < 5000)
+  {
+    left(add_speed + 1 * speed_factor);
+  }
+
+  else if (pos >= 2000 && pos < 2500)
+  {
+    left(add_speed + 2 * speed_factor);
+  }
+
+  else if (pos >= 1500  && pos < 2000)
+  {
+    left(add_speed + 3 * speed_factor);
+  }
+
+  else if (pos >= 1000 && pos < 1500)
+  {
+    left(add_speed + 4 * speed_factor);
+  }
+
+  else stop();
+
+
 }
 
 /*

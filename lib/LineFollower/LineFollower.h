@@ -23,7 +23,7 @@ using namespace std;
 #define BACK_PIN 1
 
 #define BAUD 9600
-#define DEFAULT_SPEED 130
+#define DEFAULT_SPEED 80
 #define MULTIPLIER 1000
 
 #define RX 10
@@ -37,8 +37,10 @@ using namespace std;
 #define THRESHOLD 500
 
 //add and subtract from or to this speed
-#define spd 70
-#define spd_factor 5
+#define spd 85
+#define speed_factor 5
+#define spd_factor 4
+#define add_speed 60
 
 //define input and output macro
 #define input(pin) pinMode(pin, INPUT)
@@ -95,6 +97,7 @@ public:
   void set_motors(int lspeed, int rspeed);
   void motors_init(void);
 	void stop(void);
+	void set_speed(u_int dSpeed);
 
 	//Extra motor controls
 	void forward(u_int lspeed, u_int rspeed);

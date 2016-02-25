@@ -20,6 +20,7 @@ void setup()
   LineFollowingRobot.init();
 
   lineFollower.init();
+  LineFollowingRobot.set_speed(85);
 }
 
 void loop()
