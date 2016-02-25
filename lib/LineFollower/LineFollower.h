@@ -28,6 +28,13 @@ using namespace std;
 #define RX 10
 #define TX 11
 
+//Delay macro
+#define SHORT_DELAY 100
+#define LONG_DELAY 500
+
+//Threshold
+#define THRESHOLD 500
+
 //define input and output macro
 #define input(pin) pinMode(pin, INPUT)
 #define output(pin) pinMode(pin, OUTPUT)
@@ -36,6 +43,10 @@ using namespace std;
 #define pwm(pin, value) analogWrite(pin, value)
 #define on(pin) digitalWrite(pin, HIGH)
 #define off(pin) digitalWrite(pin, LOW)
+
+#define short_delay delay(SHORT_DELAY)
+#define long_delay delay(LONG_DELAY)
+
 
 typedef unsigned int u_int;
 
@@ -49,11 +60,17 @@ private:
 	u_int leftSpeed;
 	u_int rightSpeed;
 	char command;
+	u_int activeSensors;
+
+	//Digital and analog reading array
+	vector <u_int> digitalReading;
+	vector <u_int> analogReading;
 
 public:
   //Constructors
   LineFollower(void) :
-	defaultSpeed(DEFAULT_SPEED)
+	defaultSpeed(DEFAULT_SPEED),
+	activeSensors(0)
 	{
 		leftSpeed = DEFAULT_SPEED;
 		rightSpeed = DEFAULT_SPEED;
@@ -85,6 +102,14 @@ public:
 	//Bluetooth control
 	void wireless_control(void);
 	void wireless_control(bool debug_mode);
+
+	//Debugging sensors
+	void debug(void);
+	void wireless_debug(void);
+
+
+	//Line Following control
+	void read_line(void);
 };
 
 extern LineFollower LineFollowingRobot;

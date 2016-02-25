@@ -22,5 +22,8 @@ void setup()
 
 void loop()
 {
+  // LineFollowingRobot.wireless_control();
+  // LineFollowingRobot.debug();
+  // LineFollowingRobot.wireless_debug();
   LineFollowingRobot.wireless_control();
 }

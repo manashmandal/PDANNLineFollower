@@ -186,11 +186,96 @@ void LineFollower::set_sensors_pins(vector <u_int> s)
 
 
 /*
+== DEBUG SECTION
+*/
+//Print sensor value
+void LineFollower::debug(void)
+{
+  long_delay;
+  cout << " ======= ANALOG READING ===== " << endl;
+  for (u_int i = 0; i < sensors.size(); i++)
+  {
+    cout << "ir [" << (i + 1) << "] = " << analogRead(sensors[i]) << endl;
+    short_delay;
+  }
+  cout << " ====== ANALOG READING END ======" << endl;
+  cout << endl << endl;
+  short_delay;
+
+  cout << " ======= DIGITAL READING ======= " << endl;
+  read_line();
+  short_delay;
+  for (u_int i = 0; i < sensors.size(); i++)
+  {
+    cout << digitalReading[i] << " ";
+  }
+  cout << endl;
+  cout << " ======= DIGITAL READING END ==== " << endl;
+  cout << endl << endl;
+  long_delay;
+}
+
+void LineFollower::wireless_debug(void)
+{
+  long_delay;
+  Bluetooth.println("======= ANALOG READING ===== ");
+  for (u_int i = 0; i < sensors.size(); i++)
+  {
+    Bluetooth.println("ir [" + String(i + 1) + "] = " + String(analogRead(sensors[i])));
+    short_delay;
+  }
+  Bluetooth.println("======= ANALOG READING END ===== ");
+  Bluetooth.println();
+  Bluetooth.println();
+  short_delay;
+
+  Bluetooth.println(" ==== DIGITAL READING START === ");
+  read_line();
+  short_delay;
+  for (u_int i = 0; i < sensors.size(); i++)
+  {
+    Bluetooth.print(digitalReading[i] + String(" "));
+  }
+  Bluetooth.println();
+  Bluetooth.println("====== DIGITAL READING END ======");
+  Bluetooth.println();
+  Bluetooth.println();
+  long_delay;
+}
+
+/*
+
+// LINE FOLLOWING CONTROL
+*/
+
+void LineFollower::read_line(void)
+{
+  digitalReading.clear();
+  analogReading.clear();
+  for (u_int i = 0; i < sensors.size(); i++)
+  {
+    u_int reading = analogRead(sensors[i]);
+    analogReading.push_back(reading);
+    if (reading > THRESHOLD)
+    {
+      digitalReading.push_back(INSIDE_LINE);
+      activeSensors++;
+    }
+    else
+    {
+      digitalReading.push_back(OUTSIDE_LINE);
+    }
+  }
+}
+
+
+/*
 //  =========== CONSTRUCTOR ==========
 */
 //Ctor
 LineFollower::LineFollower(u_int *lm, u_int *rm, vector <u_int> &s)
-: defaultSpeed(DEFAULT_SPEED)
+: defaultSpeed(DEFAULT_SPEED),
+  activeSensors(0)
 {
   sensors = s;
   for (u_int i = 0; i < 2; i++)
@@ -228,6 +313,9 @@ void LineFollower::wireless_control(void)
       break;
     case 'd':
       right(defaultSpeed);
+      break;
+    case 'r':
+      wireless_debug();
       break;
     default:
       stop();
@@ -268,6 +356,9 @@ void LineFollower::wireless_control(bool debug_mode)
         right(defaultSpeed);
         Bluetooth.println("RIGHT");
         Serial.println("RIGHT");
+        break;
+      case 'r':
+        wireless_debug();
         break;
       default:
         Bluetooth.println("STOP");
