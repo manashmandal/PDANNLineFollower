@@ -328,6 +328,7 @@ int LineFollower::calculate_right_speed(void)
   }
 }
 
+
 //Driving definition
 void LineFollower::conditional_drive(void)
 {

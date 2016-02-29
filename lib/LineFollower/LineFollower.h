@@ -60,6 +60,8 @@ typedef unsigned int u_int;
 class LineFollower
 {
 private:
+
+
   u_int leftMotorPin[2];
   u_int rightMotorPin[2];
   u_int defaultSpeed;
@@ -69,11 +71,13 @@ private:
 	char command;
 	u_int activeSensors;
 
+
+
+public:
 	//Digital and analog reading array
 	vector <u_int> digitalReading;
 	vector <u_int> analogReading;
 
-public:
   //Constructors
   LineFollower(void) :
 	defaultSpeed(DEFAULT_SPEED),
