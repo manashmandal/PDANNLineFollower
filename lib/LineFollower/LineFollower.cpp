@@ -11,6 +11,8 @@ namespace std
 
 using namespace std;
 
+
+
 //Initialize everything
 void LineFollower::init(void)
 {
@@ -324,6 +326,60 @@ int LineFollower::calculate_right_speed(void)
     Bluetooth.println("right spd: " + String(speed));
     return speed;
   }
+}
+
+//Driving definition
+void LineFollower::conditional_drive(void)
+{
+  read_line();
+  if (digitalReading[3] == 1 || digitalReading[4] == 1)
+  {
+    forward(defaultSpeed, defaultSpeed);
+  }
+
+  else if (digitalReading[2] == 1)
+  {
+    forward(0, add_speed + speed_factor * 1);
+  }
+
+  else if (digitalReading[1] == 1)
+  {
+    forward(0, add_speed + speed_factor * 2);
+  }
+
+  else if (digitalReading[0] == 1)
+  {
+    forward(0, add_speed + speed_factor * 3);
+  }
+
+
+  else if (digitalReading[5] == 1)
+  {
+    forward(add_speed + speed_factor * 1, 0);
+  }
+
+  else if (digitalReading[6] == 1)
+  {
+    forward(add_speed + speed_factor * 2, 0);
+  }
+
+  else if (digitalReading[7] == 1)
+  {
+    forward(add_speed + speed_factor * 3, 0);
+  }
+
+  else if (digitalReading[0] == 1 && digitalReading[1] == 1)
+  {
+    forward(0, add_speed + speed_factor * 3);
+  }
+
+  else if (digitalReading[6] == 1 && digitalReading[7] == 1)
+  {
+    forward(add_speed + speed_factor * 3, 0);
+  }
+
+  else stop();
+
 }
 
 void LineFollower::differential_drive(void)

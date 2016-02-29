@@ -124,6 +124,7 @@ public:
 	int read_line(void);
 	void clear_reading(void);
 	void differential_drive(void);
+	void conditional_drive(void);
 
 	int calculate_left_speed(void);
 	int calculate_right_speed(void);
