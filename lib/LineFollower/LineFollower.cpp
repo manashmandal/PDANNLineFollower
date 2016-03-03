@@ -340,51 +340,43 @@ void LineFollower::conditional_drive(void)
 
   else if (digitalReading[2] == 1)
   {
-    forward(0, add_speed + speed_factor * 1);
-
+    forward(0, add_speed + speed_factor * 1.5);
   }
 
   else if (digitalReading[1] == 1)
   {
-    forward(0, add_speed + speed_factor * 2);
-
+    forward(0, add_speed + speed_factor * 2.5);
   }
 
   else if (digitalReading[0] == 1)
   {
-    forward(0, add_speed + speed_factor * 3);
-
+    forward(0, add_speed + speed_factor * 3.5);
   }
 
 
   else if (digitalReading[5] == 1)
   {
-    forward(add_speed + speed_factor * 1, 0);
-
+    forward(add_speed + speed_factor * 1.5, 0);
   }
 
   else if (digitalReading[6] == 1)
   {
-    forward(add_speed + speed_factor * 2, 0);
-
+    forward(add_speed + speed_factor * 2.5, 0);
   }
 
   else if (digitalReading[7] == 1)
   {
-    forward(add_speed + speed_factor * 3, 0);
-
+    forward(add_speed + speed_factor * 3.5, 0);
   }
 
   else if (digitalReading[0] == 1 && digitalReading[1] == 1)
   {
     forward(0, add_speed + speed_factor * 3);
-
   }
 
   else if (digitalReading[6] == 1 && digitalReading[7] == 1)
   {
     forward(add_speed + speed_factor * 3, 0);
-
   }
 
   else stop();

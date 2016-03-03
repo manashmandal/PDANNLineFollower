@@ -53,9 +53,9 @@ using namespace std;
 
 //add and subtract from or to this speed
 #define spd 85
-#define speed_factor 5
+#define speed_factor 10
 #define spd_factor 4
-#define add_speed 120
+#define add_speed 60
 
 //define input and output macro
 #define input(pin) pinMode(pin, INPUT)

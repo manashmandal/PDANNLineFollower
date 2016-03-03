@@ -87,7 +87,7 @@ void setup()
   LineFollowingRobot.init();
 
   lineFollower.init();
-  LineFollowingRobot.set_speed(70);
+  LineFollowingRobot.set_speed(85);
 }
 
 int leftMotorSpeed = 0;
