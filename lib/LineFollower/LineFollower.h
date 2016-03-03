@@ -23,7 +23,7 @@ using namespace std;
 #define BACK_PIN 1
 
 #define BAUD 9600
-#define DEFAULT_SPEED 80
+#define DEFAULT_SPEED 150
 #define MULTIPLIER 1000
 
 #define RX 10
@@ -40,7 +40,7 @@ using namespace std;
 #define spd 85
 #define speed_factor 5
 #define spd_factor 4
-#define add_speed 60
+#define add_speed 120
 
 //define input and output macro
 #define input(pin) pinMode(pin, INPUT)
