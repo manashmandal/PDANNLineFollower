@@ -7,6 +7,21 @@
 #include <iterator>
 #include <SoftwareSerial.h>
 
+//Definition of delays
+#define delay5 delay(5)
+#define delay10 delay(10)
+#define delay15 delay(15)
+#define delay20 delay(20)
+#define delay25 delay(25)
+#define delay30 delay(30)
+#define delay35 delay(35)
+#define delay40 delay(40)
+#define delay45 delay(45)
+#define delay50 delay(50)
+#define delay60 delay(60)
+#define delay70 delay(70)
+#define delay80 delay(80)
+
 using namespace std;
 
 //If inverse logic is defined
