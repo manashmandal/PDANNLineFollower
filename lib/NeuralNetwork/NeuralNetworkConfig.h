@@ -2,6 +2,8 @@
 #define NEURAL_NETWORK_CONFIG_H_
 #include <LineFollower.h>
 
+#define INPUT_BIAS 1
+#define HIDDEN_BIAS 1
 
 const int PatternCount = 1;
 const int InputNodes = 8;
@@ -10,10 +12,13 @@ const int OutputNodes = 2;
 
 double Input[PatternCount][InputNodes+1];
 
-double Hidden[HiddenNodes];
+double Hidden[HiddenNodes+1];
 double Output[OutputNodes];
 double HiddenWeights[InputNodes+1][HiddenNodes];
 double OutputWeights[HiddenNodes+1][OutputNodes];
+
+//Variables
+double Accum;
 
 
 void updateInput(void)
@@ -181,6 +186,40 @@ void weights(void)
   //Bias
   OutputWeights[10][0] = 22.200;
   OutputWeights[10][1] = 20.777;
+}
+
+void calculateOutput(void)
+{
+  for(int p = 0 ; p < PatternCount ; p++ )
+  {
+    for(int i = 0 ; i < HiddenNodes ; i++ ) {
+      Accum = HiddenWeights[InputNodes][i];
+      for(int j = 0 ; j <= InputNodes ; j++ ) {
+        Accum += Input[p][j] * HiddenWeights[j][i] ;
+      }
+      Hidden[i] = 1.0/(1.0 + exp(-Accum)) ;
+    }
+    /****************************
+    Bias for Output layer
+    *****************************/
+    Hidden[10] = HIDDEN_BIAS;
+
+    for(int i = 0 ; i < OutputNodes ; i++ ) {
+      Accum = OutputWeights[HiddenNodes][i] ;
+      for(int j = 0 ; j <=HiddenNodes ; j++ ) {
+        Accum += Hidden[j] * OutputWeights[j][i] ;
+      }
+      Output[i] = 1.0/(1.0 + exp(-Accum)) ;
+    }
+  }
+}
+
+void printNeuralNetOutputViaBluetooth(void)
+{
+  updateInput();
+  calculateOutput();
+  Bluetooth.println("Left: " + String(Output[0]));
+  Bluetooth.println("Right: " + String(Output[1]));
 }
 
 #endif
