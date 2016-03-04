@@ -23,7 +23,7 @@ double Accum;
 
 void updateInput(void)
 {
-  LineFollowingRobot.read_line();
+  LineFollowingRobot.read_sensors();
   for (u_int i = 0; i < LineFollowingRobot.digitalReading.size(); i++){
     Input[0][i] = LineFollowingRobot.digitalReading[i];
   }
@@ -194,7 +194,7 @@ void calculateOutput(void)
   {
     for(int i = 0 ; i < HiddenNodes ; i++ ) {
       Accum = HiddenWeights[InputNodes][i];
-      for(int j = 0 ; j <= InputNodes ; j++ ) {
+      for(int j = 0 ; j < InputNodes ; j++ ) {
         Accum += Input[p][j] * HiddenWeights[j][i] ;
       }
       Hidden[i] = 1.0/(1.0 + exp(-Accum)) ;
@@ -206,20 +206,30 @@ void calculateOutput(void)
 
     for(int i = 0 ; i < OutputNodes ; i++ ) {
       Accum = OutputWeights[HiddenNodes][i] ;
-      for(int j = 0 ; j <=HiddenNodes ; j++ ) {
+      for(int j = 0 ; j < HiddenNodes ; j++ ) {
         Accum += Hidden[j] * OutputWeights[j][i] ;
       }
-      Output[i] = 1.0/(1.0 + exp(-Accum)) ;
+      // Output[i] = 1.0/(1.0 + exp(-Accum)) ;
+      Output[i] = Accum;
     }
   }
 }
 
-void printNeuralNetOutputViaBluetooth(void)
+void printNeuralNetworkOutputViaBluetooth(void)
 {
   updateInput();
   calculateOutput();
   Bluetooth.println("Left: " + String(Output[0]));
   Bluetooth.println("Right: " + String(Output[1]));
+}
+
+void neural_network_drive(void)
+{
+  updateInput();
+  calculateOutput();
+  u_int left_speed = Output[0];
+  u_int right_speed = Output[1];
+  LineFollowingRobot.forward(left_speed, right_speed);
 }
 
 #endif

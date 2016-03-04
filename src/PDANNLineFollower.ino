@@ -25,13 +25,17 @@ void setup()
 
   lineFollower.init();
   LineFollowingRobot.set_speed(75);
+  weights();
 }
 
 
 #if defined(NEURAL_NETWORK)
 void loop()
 {
-
+  weights();
+  // printNeuralNetworkOutputViaBluetooth();
+  // LineFollowingRobot.wireless_debug();
+  neural_network_drive();
 }
 
 
