@@ -8,12 +8,12 @@ const int InputNodes = 8;
 const int HiddenNodes = 10;
 const int OutputNodes = 2;
 
-float Input[PatternCount][InputNodes+1];
+double Input[PatternCount][InputNodes+1];
 
-float Hidden[HiddenNodes];
-float Output[OutputNodes];
-float HiddenWeights[InputNodes+1][HiddenNodes];
-float OutputWeights[HiddenNodes+1][OutputNodes];
+double Hidden[HiddenNodes];
+double Output[OutputNodes];
+double HiddenWeights[InputNodes+1][HiddenNodes];
+double OutputWeights[HiddenNodes+1][OutputNodes];
 
 
 void updateInput(void)
@@ -138,7 +138,49 @@ void weights(void)
   HiddenWeights[8][9] = -8.0036 ;
 
   //Hidden to Output weights
-  
+  //1st
+  OutputWeights[0][0] = -1.9999e+000 ;
+  OutputWeights[0][1] = 4.2934e+001;
+
+  //2nd
+  OutputWeights[1][0] = 4.4046e-004;
+  OutputWeights[1][1] = 1.9417e+001;
+
+  //3rd
+  OutputWeights[2][0] = -3.7500e+001;
+  OutputWeights[2][1] = -1.2471e+001;
+
+  //4th
+  OutputWeights[3][0] = 5.8359e-004;
+  OutputWeights[3][1] = 2.5449e+001;
+
+  //5th
+  OutputWeights[4][0] = 4.7963e-004;
+  OutputWeights[4][1] = 2.3503e+001;
+
+  //6th
+  OutputWeights[5][0] = -1.5063e+001;
+  OutputWeights[5][1] = 1.1414e+001;
+
+  //7th
+  OutputWeights[6][0] = 3.9991e+000;
+  OutputWeights[6][1] = -1.5813e+001;
+
+  //8th
+  OutputWeights[7][0] = 7.2023e-002;
+  OutputWeights[7][1] = -1.3357e+001;
+
+  //9th
+  OutputWeights[8][0] = -6.9990e+000;
+  OutputWeights[8][1] = 5.3314e+001;
+
+  //10th
+  OutputWeights[9][0] = -5.3093e+000;
+  OutputWeights[9][1] = 2.3156e+001;
+
+  //Bias
+  OutputWeights[10][0] = 22.200;
+  OutputWeights[10][1] = 20.777;
 }
 
 #endif
