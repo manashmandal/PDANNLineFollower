@@ -14,6 +14,7 @@
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
+\usepackage{subfigure}
 
 %Use helvetica as sans serif
 \usepackage{helvet}
@@ -217,7 +218,42 @@ The universal approximation theorem for neural networks states that every contin
 
 	\section{Importance of the project}
 	
-	Robotics technology is emerging at a rapid pace, offering new possibilities for automating tasks in many challenging applications, especially in autonomous self driving vehicles. A lot of parameters and conditions and other necessary things are needed to be considered to build a complete autonomous self driving vehicles, yet making the vehicle to learn to follow the line of the path is one of the basic building blocks to build a complete autonomous self driving vehicles. The main objective of the project is to train a network and apply it on a autonomous line following prototype which can navigate autonomously at any line consisting of any width.
+	Robotics technology is emerging at a rapid pace, offering new possibilities for automating tasks in many challenging applications, especially in autonomous self driving vehicles. A lot of parameters and conditions and other necessary things are needed to be considered to build a complete autonomous self driving vehicles, yet making the vehicle to learn to follow the line of the path is one of the basic building blocks to build a complete autonomous self driving vehicles. The main objective of the project is to train a network and apply it on a autonomous line following prototype which can navigate autonomously at any line consisting of any width. 
+	
+	Parameters of vehicles can be different from each other but the training techniques to follow a line on a surface will be the same for all of the test objects. So it is more convenient to train the network and set the weight than defining all the conditions to follow line.
+	
+	
+	\section{Prototype construction}
+	
+	List and description of the items and electronic modules used in this project. 
+	
+	\subsection{Arduino Nano}
+	
+	The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x) or ATmega168 (Arduino Nano 2.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one. The Nano was designed and is being produced by Gravitech.
+	
+
+	\subsubsection{Technical Specifications}
+	
+	\begin{tabular}{| p{5cm} | p{12cm} |}
+
+	\hline
+	Microcontroller & Atmel ATmega168 or ATmega328 \\ \hline
+	Operating Voltage (logic level) & 5 V \\ \hline
+	Input Voltage (recommended) &	7-12 V \\ \hline
+	Input Voltage (limits)	& 6-20 V \\ \hline
+Digital I/O Pins &	14 (of which 6 provide PWM output)\\ \hline
+Analog Input Pins &	8 \\ \hline
+DC Current per I/O Pin & 40 mA \\ \hline
+Flash Memory &	16 KB (ATmega168) or 32 KB (ATmega328) of which 2 KB used by bootloader \\ \hline
+SRAM &	1 KB (ATmega168) or 2 KB (ATmega328)\\ \hline
+EEPROM	& 512 bytes (ATmega168) or 1 KB (ATmega328)\\ \hline
+Clock Speed &	16 MHz \\ \hline
+Dimensions &	0.73" x 1.70" \\ \hline
+Length &	45 mm\\ \hline
+Width &	18 mm\\ \hline
+Weigth	& 5 g\\ \hline
+	
+	\end{tabular}
 	
 
 
