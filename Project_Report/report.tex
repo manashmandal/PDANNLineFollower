@@ -194,6 +194,25 @@ The feedforward neural network was the first and simplest type of artificial neu
 			\includegraphics[width=0.4\textwidth, center]{Feed_forward_neural_net.png}
 			\caption{A simple Feedforward neural network.}
 		\end{figure}
+		
+		
+		\subsubsection{Multi-layer perceptron}
+		This class of networks consists of multiple layers of computational units, usually interconnected in a feed-forward way. Each neuron in one layer has directed connections to the neurons of the subsequent layer. In many applications the units of these networks apply a sigmoid function as an activation function.
+
+The universal approximation theorem for neural networks states that every continuous function that maps intervals of real numbers to some output interval of real numbers can be approximated arbitrarily closely by a multi-layer perceptron with just one hidden layer. This result holds for a wide range of activation functions, e.g. for the sigmoidal functions.
+
+		\begin{figure}[H]
+			\includegraphics[width=0.4\textwidth, center]{XOR_perceptron_net.png}
+			\caption{A multi-layer perceptron network learning XOR}
+		\end{figure}
+		
+		
+	\subsubsection{Backpropagation}
+	
+	Backpropagation, an abbreviation for "backward propagation of errors", is a common method of training artificial neural networks used in conjunction with an optimization method such as gradient descent. The method calculates the gradient of a loss function with respect to all the weights in the network. The gradient is fed to the optimization method which in turn uses it to update the weights, in an attempt to minimize the loss function.
+	
+	\subsubsection{Gradient descent}
+	Gradient descent is a first-order optimization algorithm. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or of the approximate gradient) of the function at the current point.
 
 
 	\section{Importance of the project}

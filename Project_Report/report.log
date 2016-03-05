@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 03:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 03:24
 entering extended mode
 **./report.tex
 (report.tex
@@ -338,27 +338,34 @@ File: Feed_forward_neural_net.png Graphic file (type png)
 <use Feed_forward_neural_net.png>
 Package pdftex.def Info: Feed_forward_neural_net.png used on input line 194.
 (pdftex.def)             Requested size: 182.09485pt x 210.849pt.
- [8 <./neural_net_example.png>] [9 <./Feed_forward_neural_net.png>] (report.aux
-) ) 
+ [8 <./neural_net_example.png>]
+<XOR_perceptron_net.png, id=48, 250.9375pt x 248.93pt>
+File: XOR_perceptron_net.png Graphic file (type png)
+
+<use XOR_perceptron_net.png>
+Package pdftex.def Info: XOR_perceptron_net.png used on input line 205.
+(pdftex.def)             Requested size: 182.09485pt x 180.64624pt.
+ [9 <./Feed_forward_neural_net.png> <./XOR_perceptron_net.png>] [10] (report.au
+x) ) 
 Here is how much of TeX's memory you used:
- 4379 strings out of 493634
- 61751 string characters out of 3149412
+ 4384 strings out of 493634
+ 61880 string characters out of 3149412
  129266 words of memory out of 3000000
- 7701 multiletter control sequences out of 15000+200000
+ 7705 multiletter control sequences out of 15000+200000
  13682 words of font info for 48 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  28i,7n,34p,889b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbxti10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb>
-Output written on report.pdf (9 pages, 297846 bytes).
+<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E
+:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on report.pdf (10 pages, 325092 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

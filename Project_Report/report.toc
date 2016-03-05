@@ -10,4 +10,7 @@
 \contentsline {section}{\numberline {2}Machine Learning}{7}
 \contentsline {subsection}{\numberline {2.1}Artificial Neural Network}{7}
 \contentsline {subsection}{\numberline {2.2}Feedforward Neural Network}{8}
-\contentsline {section}{\numberline {3}Importance of the project}{9}
+\contentsline {subsubsection}{\numberline {2.2.1}Multi-layer perceptron}{9}
+\contentsline {subsubsection}{\numberline {2.2.2}Backpropagation}{10}
+\contentsline {subsubsection}{\numberline {2.2.3}Gradient descent}{10}
+\contentsline {section}{\numberline {3}Importance of the project}{10}
