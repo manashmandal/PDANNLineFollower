@@ -1,13 +1,22 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 00:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 01:03
 entering extended mode
 **./report.tex
 (report.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
-("E:\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("E:\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("E:\MiKTeX 2.9\tex\latex\extsizes\extarticle.cls"
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+("E:\MiKTeX 2.9\tex\latex\extsizes\size14.clo"
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+("E:\MiKTeX 2.9\tex\latex\base\exscale.sty"
+Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen102
 )
 \c@part=\count79
 \c@section=\count80
@@ -19,7 +28,7 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen102
+\bibindent=\dimen103
 )
 ("E:\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -50,22 +59,22 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
 )
 ("E:\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count88
 \lst@gtempboxa=\box26
 \lst@token=\toks15
 \lst@length=\count89
-\lst@currlwidth=\dimen105
+\lst@currlwidth=\dimen106
 \lst@column=\count90
 \lst@pos=\count91
-\lst@lostspace=\dimen106
-\lst@width=\dimen107
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
 \lst@newlines=\count92
 \lst@lineno=\count93
-\lst@maxwidth=\dimen108
+\lst@maxwidth=\dimen109
 
 ("E:\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
@@ -78,10 +87,6 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("E:\MiKTeX 2.9\tex\latex\sectsty\sectsty.sty"
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
-)
 ("E:\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
@@ -93,11 +98,11 @@ Package: amstext 2000/06/29 v2.01
 ("E:\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
-\ex@=\dimen109
+\ex@=\dimen110
 ))
 ("E:\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen110
+\pmbraise@=\dimen111
 )
 ("E:\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -114,7 +119,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen111
+\big@size=\dimen112
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count101
@@ -127,12 +132,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count106
 \maxfields@=\count107
 \andhelp@=\toks18
-\eqnshift@=\dimen112
-\alignsep@=\dimen113
-\tagshift@=\dimen114
-\tagwidth@=\dimen115
-\totwidth@=\dimen116
-\lineht@=\dimen117
+\eqnshift@=\dimen113
+\alignsep@=\dimen114
+\tagshift@=\dimen115
+\tagwidth@=\dimen116
+\totwidth@=\dimen117
+\lineht@=\dimen118
 \@envbody=\toks19
 \multlinegap=\skip44
 \multlinetaggap=\skip45
@@ -179,36 +184,32 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) ("E:\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-)
-
-LaTeX Warning: Unused global option(s):
-    [14pt].
-
-(report.aux)
+) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
- ("E:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+
+("E:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
-\scratchdimen=\dimen118
+\scratchdimen=\dimen119
 \scratchbox=\box32
 \nofMPsegments=\count118
 \nofMParguments=\count119
 \everyMPshowfont=\toks24
 \MPscratchCnt=\count120
-\MPscratchDim=\dimen119
+\MPscratchDim=\dimen120
 \MPnumerator=\count121
 \makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks25
@@ -220,30 +221,51 @@ LaTeX Font Info:    ... okay on input line 21.
 
  [1
 
-{C:/Users/Manash/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] (r
-eport.aux) ) 
+{C:/Users/Manash/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (19.43962pt too wide) in paragraph at lines 48--49
+[]\OT1/cmr/bx/it/14.4 Keywords- \OT1/cmr/m/n/14.4 Feed-for-ward Neu-ral Net-wor
+k, Ar-ti-fi-cial In-tel-li-gence, Robotics,
+ []
+
+<ir_line.png, id=8, 602.25pt x 293.095pt>
+File: ir_line.png Graphic file (type png)
+ <use ir_line.png>
+Package pdftex.def Info: ir_line.png used on input line 64.
+(pdftex.def)             Requested size: 455.24408pt x 221.56041pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2] <ldr_line.jpg, id=15, 501.875pt x 236.885pt>
+File: ldr_line.jpg Graphic file (type jpg)
+ <use ldr_line.jpg>
+Package pdftex.def Info: ldr_line.jpg used on input line 73.
+(pdftex.def)             Requested size: 455.24408pt x 214.88614pt.
+
+Overfull \hbox (55.6588pt too wide) in paragraph at lines 85--86
+[] $\OML/cmm/m/it/14.4 threshold \OMS/cmsy/m/n/14.4   []$ 
+ []
+
+[3 <./ir_line.png> <./ldr_line.jpg>] [4] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 3668 strings out of 493634
- 48658 string characters out of 3149412
- 117256 words of memory out of 3000000
- 7028 multiletter control sequences out of 15000+200000
- 12172 words of font info for 43 fonts, out of 3000000 for 9000
+ 3612 strings out of 493634
+ 49663 string characters out of 3149412
+ 112521 words of memory out of 3000000
+ 6973 multiletter control sequences out of 15000+200000
+ 13080 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,6n,32p,824b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx9.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.
-pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><E:/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr9.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (3 pages, 174955 bytes).
+ 27i,6n,32p,825b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbxti10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (4 pages, 161681 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

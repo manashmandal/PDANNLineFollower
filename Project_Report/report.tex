@@ -1,4 +1,4 @@
-\documentclass[14pt, a4paper]{article}
+\documentclass[14pt,a4paper]{extarticle}
 
 
 \setlength{\topmargin}{-2cm}
@@ -6,9 +6,11 @@
 \setlength{\textheight}{24cm}
 \setlength{\textwidth}{16cm}
 
+
+
 \usepackage{graphicx}
 \usepackage{listings}
-\usepackage{sectsty}
+
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
@@ -57,9 +59,21 @@ In this project, the conventional control system is being replaced by artificial
 		\paragraph{Detecting line using IR}
 		To detect line using IR, a threshold value must be measured. IR sensor gives different reading on different colored surface. Both values from IR on white line and IR on black line must be recorded before sensing the line.
 		
+		
+		\begin{figure}[!h]
+				\includegraphics[width=\textwidth]{ir_line.png}
+				\caption{Detecting line using IR sensor}
+				\label{fig:detect_line_ir}
+		\end{figure}
+		
 		\paragraph{Detecting line using LDR}
 		To detect line using LDR same procedure from IR can be used. Since reflected line intensity depends on the reflecting surface. If the color of the surface is white, maximum light is reflected. If it is black then minimum light is reflected. Reflected light has different intensity based on the color of the surface it is being reflected from. So, nearest colors can be differentiated using LDR sensors. 
 		
+		\begin{figure}[!h]
+			\includegraphics[width=\textwidth]{ldr_line.jpg}
+			\caption{Detecting line using LDR sensor}
+			\label{fig:detect_line_ldr}
+		\end{figure}
 			\subsection{Algorithm for detecting line}
 		\begin{algorithm}
 		\caption{Line Detecting Algorithm}\label{linetracker}
