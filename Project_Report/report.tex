@@ -68,7 +68,15 @@ In this project, the conventional control system is being replaced by artificial
 		
 		\State $irPin \gets \text{ir receiver pin}$
 		\State $irReading \gets \text {analog reading from ir receiver} $
+		\State $threshold \gets \text {threshold value for differentiate betweeen white and black line} $
+		\State $irDigitalReading \gets \text {converts analog into binary format} $
 		
+		\State $ irReading \gets \text{reading from irPin}$		
+		\If {$irReading > \textit{threshold}$}
+		\State $irDigitalReading \gets 1$
+		\Else 
+		\State $irDigitalReading \gets 0$
+		\EndIf
 		\EndProcedure
 		\end{algorithmic}
 		\end{algorithm}

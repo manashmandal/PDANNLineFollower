@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 00:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 00:29
 entering extended mode
 **./report.tex
 (report.tex
@@ -223,13 +223,13 @@ LaTeX Font Info:    ... okay on input line 21.
 {C:/Users/Manash/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] (r
 eport.aux) ) 
 Here is how much of TeX's memory you used:
- 3653 strings out of 493634
- 48466 string characters out of 3149412
- 116256 words of memory out of 3000000
- 7015 multiletter control sequences out of 15000+200000
- 11128 words of font info for 40 fonts, out of 3000000 for 9000
+ 3668 strings out of 493634
+ 48658 string characters out of 3149412
+ 117256 words of memory out of 3000000
+ 7028 multiletter control sequences out of 15000+200000
+ 12172 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,6n,32p,824b,270s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,32p,824b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmbx9.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.
@@ -240,10 +240,10 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
 pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmr9.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb>
-Output written on report.pdf (3 pages, 161684 bytes).
+m/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (3 pages, 174955 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
