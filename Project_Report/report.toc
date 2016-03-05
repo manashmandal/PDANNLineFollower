@@ -16,4 +16,5 @@
 \contentsline {section}{\numberline {3}Importance of the project}{10}
 \contentsline {section}{\numberline {4}Prototype construction}{10}
 \contentsline {subsection}{\numberline {4.1}Arduino Nano}{11}
-\contentsline {subsubsection}{\numberline {4.1.1}Technical Specifications}{11}
+\contentsline {subsubsection}{\numberline {4.1.1}Technical Specifications}{12}
+\contentsline {subsubsection}{\numberline {4.1.2}Pololu QTR-8A Reflectance Sensor Array}{12}

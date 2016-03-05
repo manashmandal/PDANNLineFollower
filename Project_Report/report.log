@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 03:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 04:07
 entering extended mode
 **./report.tex
 (report.tex
@@ -365,41 +365,61 @@ File: XOR_perceptron_net.png Graphic file (type png)
 <use XOR_perceptron_net.png>
 Package pdftex.def Info: XOR_perceptron_net.png used on input line 206.
 (pdftex.def)             Requested size: 182.09485pt x 180.64624pt.
- [9 <./Feed_forward_neural_net.png> <./XOR_perceptron_net.png>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
+ [9 <./Feed_forward_neural_net.png> <./XOR_perceptron_net.png>] [10] <ArduinoNa
+noFront_3_sm.jpg, id=57, 451.6875pt x 297.11pt>
+File: ArduinoNanoFront_3_sm.jpg Graphic file (type jpg)
+
+<use ArduinoNanoFront_3_sm.jpg>
+Package pdftex.def Info: ArduinoNanoFront_3_sm.jpg used on input line 237.
+(pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
+
+<ArduinoNanoBack_3_sm.jpg, id=58, 451.6875pt x 297.11pt>
+File: ArduinoNanoBack_3_sm.jpg Graphic file (type jpg)
+
+<use ArduinoNanoBack_3_sm.jpg>
+Package pdftex.def Info: ArduinoNanoBack_3_sm.jpg used on input line 242.
+(pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\OT1/cmr/m/n/14.4 Operating Volt-age
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 246--246
+Underfull \hbox (badness 1158) in paragraph at lines 261--261
 []\OT1/cmr/m/n/14.4 DC Cur-rent per I/O
  []
 
 
-Overfull \hbox (52.45276pt too wide) in paragraph at lines 237--257
+Overfull \hbox (52.45276pt too wide) in paragraph at lines 252--272
 [] 
  []
 
-[11] (report.aux) ) 
+[11 <./ArduinoNanoFront_3_sm.jpg> <./ArduinoNanoBack_3_sm.jpg>]
+<qtr.jpg, id=62, 803.0pt x 554.07pt>
+File: qtr.jpg Graphic file (type jpg)
+ <use qtr.jpg>
+Package pdftex.def Info: qtr.jpg used on input line 279.
+(pdftex.def)             Requested size: 224.83847pt x 155.13853pt.
+ [12 <./qtr.jpg>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 4544 strings out of 493634
- 64038 string characters out of 3149412
+ 4559 strings out of 493634
+ 64375 string characters out of 3149412
  130827 words of memory out of 3000000
- 7859 multiletter control sequences out of 15000+200000
+ 7871 multiletter control sequences out of 15000+200000
  13682 words of font info for 48 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 28i,8n,34p,889b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (11 pages, 320328 bytes).
+ 28i,8n,34p,889b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (12 pages, 555807 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
