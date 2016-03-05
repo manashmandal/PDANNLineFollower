@@ -234,8 +234,14 @@ void neural_network_drive(void)
   calculateOutput();
   int lspeed = Output[0] * 100;
   int rspeed = Output[1] * 100;
+
+  //Reduced speed
+  lspeed -= 15;
+  rspeed -= 15;
   if (lspeed < 0) lspeed = -lspeed;
   if (rspeed < 0) rspeed = -rspeed;
+
+
   LineFollowingRobot.forward(lspeed, rspeed);
   Bluetooth.println("LEFT: " + String(lspeed));
   Bluetooth.println("RIGHT: " + String(rspeed));

@@ -25,7 +25,6 @@ void setup()
 #if defined(NEURAL_NETWORK)
 void loop()
 {
-  weights();
   neural_network_drive();
 }
 
