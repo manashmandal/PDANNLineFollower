@@ -74,11 +74,14 @@ In this project, the conventional control system is being replaced by artificial
 			\caption{Detecting line using LDR sensor}
 			\label{fig:detect_line_ldr}
 		\end{figure}
+		
+		%Algorithm code
+		
 			\subsection{Algorithm for detecting line}
 		\begin{algorithm}
 		\caption{Line Detecting Algorithm}\label{linetracker}
 		\begin{algorithmic}[1]
-		\Procedure{detectLine}{}
+		\Procedure{detectLine}{irPin}
 		
 		\State $irPin \gets \text{ir receiver pin}$
 		\State $irReading \gets \text {analog reading from ir receiver} $
@@ -94,7 +97,36 @@ In this project, the conventional control system is being replaced by artificial
 		\EndProcedure
 		\end{algorithmic}
 		\end{algorithm}
-		
+	
+	\subsection{Getting current position of the robot using IR / LDR Array}
+	Current position of a robot on a line can be extracted by using IR array consisting of two or more than two IR/LDR sensors. Suppose, a robot has an IR array of 5 IR sensors. The spacing between two IR sensor is \textbf{1cm}, and the width of the line is \textbf{1.5cm}. At any time, when the robot is on the line, two values will differ from other three values meaning robot is facing straight, leaning left or leaning right. Depending on the position of the robot on the line, speed of motors can be varied to keep it on the line. This process is completely experimental and varies with the body, circuitry, battery rating, motor rating and mostly other things. The position value can be returned either in binary form such as \textbf{01100} or in weighted value such as \textbf{2500}.
+	
+	
+	\subsubsection{Algorithm for weighted positional value}
+	\begin{algorithm}[H]
+			\caption{Position calculating algorithm}\label{calculate position}
+			\begin{algorithmic}[1]
+			\Procedure{calculatePosition}{\null}
+			\State $numberOfSensors	\gets \text{number of ir/ldr	sensors}$	
+			\State Let $numberOfActiveSensors \gets 0$
+			\State Let $digitalReading[numberOfSensors]$ be new array
+			\State $weightedValues \gets 0$
+			\State $weight \gets 1000$ \Comment{Setting weighted value 1000}
+			\State Let $position \gets -1$\Comment{Setting current position at -1}
+			\For {$index = 0$ to $numberOfSensors$}
+				\State $digitalReading[index] \gets \Call{detectLine}{index}$
+				\If {$digitalReading[index] \gets 1$}
+					\State $numberOfActiveSensors \gets numberOfActiveSensors + 1$
+				\EndIf
+				\State $weightedValues \gets weightedValues + digitalReading[index] * weight$
+			\EndFor
+			\State $position \gets weightedValues / numberOfActiveSensors$
+			\State \textbf{return} $position$
+			\EndProcedure		
+	\end{algorithmic}
+\end{algorithm}
+	
+	
 
 
 	\subsection{Conventional line following mechanism}

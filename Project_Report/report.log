@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 01:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 01:54
 entering extended mode
 **./report.tex
 (report.tex
@@ -242,30 +242,30 @@ File: ldr_line.jpg Graphic file (type jpg)
 Package pdftex.def Info: ldr_line.jpg used on input line 73.
 (pdftex.def)             Requested size: 455.24408pt x 214.88614pt.
 
-Overfull \hbox (55.6588pt too wide) in paragraph at lines 85--86
+Overfull \hbox (55.6588pt too wide) in paragraph at lines 88--89
 [] $\OML/cmm/m/it/14.4 threshold \OMS/cmsy/m/n/14.4   []$ 
  []
 
-[3 <./ir_line.png> <./ldr_line.jpg>] [4] (report.aux) ) 
+[3 <./ir_line.png> <./ldr_line.jpg>] [4] [5] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 3612 strings out of 493634
- 49663 string characters out of 3149412
- 112521 words of memory out of 3000000
- 6973 multiletter control sequences out of 15000+200000
- 13080 words of font info for 46 fonts, out of 3000000 for 9000
+ 3625 strings out of 493634
+ 49867 string characters out of 3149412
+ 115529 words of memory out of 3000000
+ 6986 multiletter control sequences out of 15000+200000
+ 13682 words of font info for 48 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,6n,32p,825b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmbxti10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (4 pages, 161681 bytes).
+ 27i,6n,32p,825b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbxti10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (5 pages, 170721 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
