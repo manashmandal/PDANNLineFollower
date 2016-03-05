@@ -10,7 +10,7 @@
 
 \usepackage{graphicx}
 \usepackage{listings}
-
+\usepackage[export]{adjustbox}
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
@@ -45,7 +45,7 @@ In order to achieve tasks by the mobile robots, these robotic systems must have 
 
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords-}} #1}
 
-\keywords{Feedforward Neural Network, Artificial Intelligence, Robotics, Stochastic Gradient Descent, Proportional Derivative Controller}
+\keywords{Feedforward Neural Network, Machine Learning, Robotics, Backpropagation Algorithm, Stochastic Gradient Descent, Proportional Derivative Controller}
 
 \section{Introduction}
 
@@ -79,9 +79,9 @@ In this project, the conventional control system is being replaced by artificial
 		
 			\subsection{Algorithm for detecting line}
 		\begin{algorithm}
-		\caption{Line Detecting Algorithm}\label{linetracker}
+		\caption{Line Detecting Algorithm}\label{alg:linetracker}
 		\begin{algorithmic}[1]
-		\Procedure{detectLine}{irPin}
+		\Procedure{detectLine}{\textit{irPin}}
 		
 		\State $irPin \gets \text{ir receiver pin}$
 		\State $irReading \gets \text {analog reading from ir receiver} $
@@ -99,21 +99,21 @@ In this project, the conventional control system is being replaced by artificial
 		\end{algorithm}
 	
 	\subsection{Getting current position of the robot using IR / LDR Array}
-	Current position of a robot on a line can be extracted by using IR array consisting of two or more than two IR/LDR sensors. Suppose, a robot has an IR array of 5 IR sensors. The spacing between two IR sensor is \textbf{1cm}, and the width of the line is \textbf{1.5cm}. At any time, when the robot is on the line, two values will differ from other three values meaning robot is facing straight, leaning left or leaning right. Depending on the position of the robot on the line, speed of motors can be varied to keep it on the line. This process is completely experimental and varies with the body, circuitry, battery rating, motor rating and mostly other things. The position value can be returned either in binary form such as \textbf{01100} or in weighted value such as \textbf{2500}.
+	Current position of a robot on a line can be extracted by using IR array consisting of two or more than two IR/LDR sensors. Suppose, a robot has an IR array of 5 IR sensors. The spacing between two IR sensor is \textbf{1cm}, and the width of the line is \textbf{1.5cm}. At any time, when the robot is on the line, two values will differ from other three values meaning robot is facing straight, leaning left or leaning right. Depending on the position of the robot on the line, speed of motors can be varied to keep it on the line. This process is completely experimental and varies with the body, circuitry, battery rating, motor rating and mostly other things. The position value can be returned either in binary form such as \textbf{01100} using \ref{alg:linetracker} or in weighted value such as \textbf{2500} from \ref{alg:calculate_position}.
 	
 	
 	\subsubsection{Algorithm for weighted positional value}
 	\begin{algorithm}[H]
-			\caption{Position calculating algorithm}\label{calculate position}
+			\caption{Position calculating algorithm}\label{alg:calculate_position}
 			\begin{algorithmic}[1]
-			\Procedure{calculatePosition}{\null}
+			\Procedure{calculatePosition}{\textit{numberOfSensors}}
 			\State $numberOfSensors	\gets \text{number of ir/ldr	sensors}$	
-			\State Let $numberOfActiveSensors \gets 0$
-			\State Let $digitalReading[numberOfSensors]$ be new array
+			\State  $numberOfActiveSensors \gets 0$
+			\State  $digitalReading[numberOfSensors]$ be new array
 			\State $weightedValues \gets 0$
 			\State $weight \gets 1000$ \Comment{Setting weighted value 1000}
-			\State Let $position \gets -1$\Comment{Setting current position at -1}
-			\For {$index = 0$ to $numberOfSensors$}
+			\State  $position \gets -1$\Comment{Setting current position at -1}
+			\For {$index \gets 0$ to $numberOfSensors$}
 				\State $digitalReading[index] \gets \Call{detectLine}{index}$
 				\If {$digitalReading[index] \gets 1$}
 					\State $numberOfActiveSensors \gets numberOfActiveSensors + 1$
@@ -131,12 +131,75 @@ In this project, the conventional control system is being replaced by artificial
 
 	\subsection{Conventional line following mechanism}
 	
-	Conventional line following robots follow lines on a surface based on either predefined conditions or line patterns. 
+	Conventional line following robots follow lines on a surface based on either predefined conditions or line patterns. Position of the robot can be calculated from  \ref{alg:calculate_position}. If the position of the sensor indicates the robot is being shifted to right from mid point of the line, then the speed of left motor is increased and right motor is decreased and vice versa. If the position of the robot is at middle point then both of the motor will go in the same direction with same speed. The procedure can be viewed from figure \ref{fig:differential_drive_image}.
 	
+		\begin{figure}[H]
+			\includegraphics[width=\textwidth]{line-tracking-robot-steering.png}
+			\caption{Differential steering drive for following line}
+			\label{fig:differential_drive_image}
+		\end{figure}
+		
+	
+	\subsection{Drawbacks of line following robot based on differential drive system}
+	
+	Some drawbacks of differential drive system
+	
+		\begin{enumerate}
+		\item It is a static method that can only be used on a specific robot for which the algorithm was designed
+		\item Conditional statements varies with 
+			\begin{enumerate}
+				\item Weight of the robot
+				\item Speed of the robot
+				\item Spacing between the IR/LDR sensors of the sensor array
+				\item Number of IR/LDR sensors used to make the array
+				\item Width of the line to be followed by the robot
+			\end{enumerate}
+		
+		\item This method is not appropriate for driving the robot in right and acute angle turns
+		
+		
+		\end{enumerate}
+		
+	\section{Machine Learning}
+	
+	Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. In 1959, Arthur Samuel defined machine learning as a ``Field of study that gives computers the ability to learn without being explicitly programmed".
+	
+		\begin{figure}[H]
+			\includegraphics[width=0.5\textwidth, center]{data_classification_svm.png}
+			\caption{Support Vector Machine (SVM), an algorithm to classify data}
+		\end{figure}
+	
+	\subsection{Artificial Neural Network}
+	In machine learning and cognitive science, artificial neural networks (ANNs) are a family of models inspired by biological neural networks (the central nervous systems of animals, in particular the brain) and are used to estimate or approximate functions that can depend on a large number of inputs and are generally unknown. Artificial neural networks are generally presented as systems of interconnected "neurons" which exchange messages between each other. The connections have numeric weights that can be tuned based on experience, making neural nets adaptive to inputs and capable of learning.
 
-	\subsection{Importance of the project}
+For example, a neural network for handwriting recognition is defined by a set of input neurons which may be activated by the pixels of an input image. After being weighted and transformed by a function (determined by the network's designer), the activations of these neurons are then passed on to other neurons. This process is repeated until finally, an output neuron is activated. This determines which character was read.
+
+Like other machine learning methods – systems that learn from data – neural networks have been used to solve a wide variety of tasks that are hard to solve using ordinary rule-based programming, including computer vision and speech recognition.
+
+A basic model of neural network is displayed in figure \ref{fig:neural_net_model}.
+
+		\begin{figure}[H]
+			\includegraphics[width=.4\textwidth, center]{neural_net_example.png}
+			\caption{Basic model of artificial neural networks}
+			\label{fig:neural_net_model}
+		\end{figure}
 	
-	Robotics technology is emerging at a rapid pace, offering new possibilities for automating tasks in many challenging applications, especially in autonomous self driving vehicles. A lot of parameters and conditions and other necessary things are needed to be considered to build a complete autonomous self driving vehicles, yet making the vehicle to learn to follow the line of the path is one of the basic building blocks to build a complete autonomous self driving vehicles. The main objective of the project is to train a network and apply it on a autonomous line following prototype which can navigate autonomously at any line consisting of any width. 
+	\subsection{Feedforward Neural Network}
+	
+	A feedforward neural network is an artificial neural network where connections between the units do not form a cycle. This is different from recurrent neural networks.
+
+The feedforward neural network was the first and simplest type of artificial neural network devised. In this network, the information moves in only one direction, forward, from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.
+
+		\begin{figure}[H]
+			\includegraphics[width=0.4\textwidth, center]{Feed_forward_neural_net.png}
+			\caption{A simple Feedforward neural network.}
+		\end{figure}
+
+
+	\section{Importance of the project}
+	
+	Robotics technology is emerging at a rapid pace, offering new possibilities for automating tasks in many challenging applications, especially in autonomous self driving vehicles. A lot of parameters and conditions and other necessary things are needed to be considered to build a complete autonomous self driving vehicles, yet making the vehicle to learn to follow the line of the path is one of the basic building blocks to build a complete autonomous self driving vehicles. The main objective of the project is to train a network and apply it on a autonomous line following prototype which can navigate autonomously at any line consisting of any width.
+	
 
 
 \end{document}
