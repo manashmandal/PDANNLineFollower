@@ -1017,6 +1017,35 @@ void LineFollower::wireless_control(bool debug_mode)
 }
 
 	\end{spverbatim}
+	
+	\subsubsection{ANNLineFollower.ino}
+	
+	\begin{spverbatim}
+#include <LineFollower.h>
+
+const u_int _speed = 100;
+
+//Sensor pins
+vector <u_int> qtr{0, 1, 2, 3, 4, 5, 6, 7};
+
+u_int lm[] = {5, 3};
+u_int rm[] = {6, 9};
+
+LineFollower lineFollower(lm, rm, qtr);
+
+void setup()
+{
+  LineFollowingRobot.set_motors_pins(lm, rm);
+  LineFollowingRobot.set_sensors_pins(qtr);
+  LineFollowingRobot.init();
+  LineFollowingRobot.set_speed(75);
+}
+
+void loop()
+{
+  LineFollowingRobot.wireless_debug();
+}
+	\end{spverbatim}
 
 
 \end{document}
