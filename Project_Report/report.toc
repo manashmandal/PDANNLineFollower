@@ -31,3 +31,6 @@
 \contentsline {paragraph}{Hardware Features}{18}
 \contentsline {subsection}{\numberline {4.6}Breadboard}{18}
 \contentsline {subsection}{\numberline {4.7}Premium Jumper Wire}{19}
+\contentsline {section}{\numberline {5}Sensor positioning of the prototype}{19}
+\contentsline {section}{\numberline {6}Data collection process}{19}
+\contentsline {subsection}{\numberline {6.1}Processing code for driving the robot wirelessly}{19}

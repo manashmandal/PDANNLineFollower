@@ -15,6 +15,11 @@
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \usepackage{subfigure}
+\usepackage{listings}
+\usepackage{fontspec}
+\newfontfamily\Consolas{Consolas}
+\lstset{basicstyle=\Consolas}
+
 
 %Use helvetica as sans serif
 \usepackage{helvet}
@@ -78,7 +83,7 @@ In this project, the conventional control system is being replaced by artificial
 		
 		%Algorithm code
 		
-			\subsection{Algorithm for detecting line}
+		\subsection{Algorithm for detecting line}
 		\begin{algorithm}
 		\caption{Line Detecting Algorithm}\label{alg:linetracker}
 		\begin{algorithmic}[1]
@@ -233,11 +238,15 @@ Below, $u$ refers in all cases to the weighted sum of all the inputs to the neur
 		\end{cases}
 	\]
 	
+	
+	
 	\paragraph{Linear combination}
 	In this case, the output unit is simply the weighted sum of its inputs plus a bias term. A number of such linear neurons perform a linear transformation of the input vector. This is usually more useful in the first layers of a network. A number of analysis tools exist based on linear models, such as harmonic analysis, and they can all be used in neural networks with this linear neuron. The bias term allows us to make affine transformations to the data.
 	
 	\paragraph{Sigmoid}
 	A fairly simple non-linear function, a sigmoid function such as the logistic function also has an easily calculated derivative, which can be important when calculating the weight updates in the network. It thus makes the network more easily manipulable mathematically, and was attractive to early computer scientists who needed to minimize the computational load of their simulations.  \textbf{It is commonly seen in multilayer perceptrons using a backpropagation algorithm.}
+	
+
 	
 	
 	\subsection{Artificial Neural Network}
@@ -408,10 +417,14 @@ Weight	& 5 g\\ \hline
 	\end{figure}
 
 
+	\section{Sensor positioning of the prototype}
 	
 	
-
-
+	\section{Data collection process}
+	
+	\subsection{Processing code for driving the robot wirelessly}
+	
+	
 
 
 
