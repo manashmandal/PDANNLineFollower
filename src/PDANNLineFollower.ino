@@ -1,6 +1,6 @@
 #include <LineFollower.h>
 #include <NeuralNetworkConfig.h>
-#define NEURAL_NETWORK
+// #define NEURAL_NETWORK
 
 const u_int _speed = 100;
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 16:11
 entering extended mode
 **./report.tex
 (report.tex
@@ -480,28 +480,34 @@ Overfull \hbox (11.58519pt too wide) in paragraph at lines 996--996
 ector[] <u_int>[]
  []
 
-[33] [34] [35] (report.aux) ) 
+[33] [34] <processing.png, id=148, 574.39594pt x 660.21657pt>
+File: processing.png Graphic file (type png)
+
+<use processing.png>
+Package pdftex.def Info: processing.png used on input line 1031.
+(pdftex.def)             Requested size: 229.75429pt x 264.08194pt.
+ [35] [36 <./processing.png>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 4608 strings out of 493634
- 65207 string characters out of 3149412
+ 4613 strings out of 493634
+ 65296 string characters out of 3149412
  130965 words of memory out of 3000000
- 7908 multiletter control sequences out of 15000+200000
+ 7912 multiletter control sequences out of 15000+200000
  13851 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  28i,9n,34p,892b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
-><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (35 pages, 4479687 bytes).
+<E:/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (36 pages, 4559795 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
