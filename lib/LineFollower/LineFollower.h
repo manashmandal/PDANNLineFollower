@@ -75,8 +75,6 @@ typedef unsigned int u_int;
 class LineFollower
 {
 private:
-
-
   u_int leftMotorPin[2];
   u_int rightMotorPin[2];
   u_int defaultSpeed;
@@ -85,9 +83,6 @@ private:
 	u_int rightSpeed;
 	char command;
 	u_int activeSensors;
-
-
-
 public:
 	//Digital and analog reading array
 	vector <u_int> digitalReading;
@@ -126,9 +121,6 @@ public:
 	void anticlockwise(u_int lspeed, u_int rspeed);
 	void clockwise(u_int lspeed, u_int rspeed);
 
-	bool check_left_turn(void);
-	bool check_right_turn(void);
-
 	//Bluetooth control
 	void wireless_control(void);
 	void wireless_control(bool debug_mode);
@@ -137,17 +129,12 @@ public:
 	void debug(void);
 	void wireless_debug(void);
 
-
 	//Line Following control
 	void read_sensors(void);
 	int read_line(void);
 	void clear_reading(void);
 	void differential_drive(void);
 	void conditional_drive(void);
-
-	int calculate_left_speed(void);
-	int calculate_right_speed(void);
-
 };
 
 extern LineFollower LineFollowingRobot;

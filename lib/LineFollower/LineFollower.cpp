@@ -297,38 +297,6 @@ int LineFollower::read_line(void)
   return (totalWeight / activeSensors);
 }
 
-
-int LineFollower::calculate_left_speed(void)
-{
-  int pos = read_line();
-  Bluetooth.println("Right pos: " + String(pos));
-  if (pos == 3000 || pos == 4000) return defaultSpeed;
-  else if (pos >= 0 && pos < 3000) return 0;
-  else if (pos > 4000 && pos <= 6500)
-  {
-    int factor = ((pos - 4000) / 500);
-    int speed = spd + (factor * spd_factor);
-    Bluetooth.println("left spd: " + String(speed));
-    return speed;
-  }
-}
-
-int LineFollower::calculate_right_speed(void)
-{
-  int pos = read_line();
-  Bluetooth.println("Left pos: " + String(pos));
-  if (pos == 3000 || pos == 4000) return defaultSpeed;
-  else if (pos > 4000 && pos <= 6500) return 0;
-  else if (pos >= 0 && pos < 3000)
-  {
-    int factor = ((3000 - pos) / 500);
-    int speed = spd + (factor * spd_factor);
-    Bluetooth.println("right spd: " + String(speed));
-    return speed;
-  }
-}
-
-
 //Driving definition
 void LineFollower::conditional_drive(void)
 {
@@ -337,7 +305,6 @@ void LineFollower::conditional_drive(void)
   {
     forward(defaultSpeed, defaultSpeed);
   }
-
   else if (digitalReading[2] == 1)
   {
     forward(0, add_speed + speed_factor * 1.5);
@@ -352,8 +319,6 @@ void LineFollower::conditional_drive(void)
   {
     forward(0, add_speed + speed_factor * 3.5);
   }
-
-
   else if (digitalReading[5] == 1)
   {
     forward(add_speed + speed_factor * 1.5, 0);
@@ -378,87 +343,7 @@ void LineFollower::conditional_drive(void)
   {
     forward(add_speed + speed_factor * 3, 0);
   }
-
   else stop();
-
-}
-
-void LineFollower::differential_drive(void)
-{
-  int pos = read_line();
-
-
-  if (pos == 3000 || pos == 4000 || pos == 3500)
-  {
-    forward(defaultSpeed, defaultSpeed);
-  }
-
-  else if (pos > 4000 && pos < 5000)
-  {
-    right(add_speed + 1 * speed_factor);
-  }
-
-  else if (pos >= 5000 && pos < 5500)
-  {
-    right(add_speed + 2 * speed_factor);
-  }
-
-  else if (pos >= 5500  && pos < 6000)
-  {
-    right(add_speed + 3 * speed_factor);
-  }
-
-  else if (pos >= 6000 && pos < 7000)
-  {
-    right(add_speed + 4 * speed_factor);
-  }
-
-  //left
-  else if (pos >= 2500 && pos < 5000)
-  {
-    left(add_speed + 1 * speed_factor);
-  }
-
-  else if (pos >= 2000 && pos < 2500)
-  {
-    left(add_speed + 2 * speed_factor);
-  }
-
-  else if (pos >= 1500  && pos < 2000)
-  {
-    left(add_speed + 3 * speed_factor);
-  }
-
-  else if (pos >= 1000 && pos < 1500)
-  {
-    left(add_speed + 4 * speed_factor);
-  }
-
-  if ((check_left_turn() && !check_right_turn())
-      || (!check_left_turn() && check_right_turn())
-    )
-  {
-    if (check_left_turn()){
-      while(read_line() < 0) anticlockwise(defaultSpeed, defaultSpeed);
-    } else if (check_right_turn()){
-      while(read_line() < 0) clockwise(defaultSpeed, defaultSpeed);
-    }
-  }
-
-}
-
-bool LineFollower::check_left_turn(void)
-{
-  int leftReading = analogRead(7);
-  if (leftReading > THRESHOLD) return true;
-  else return false;
-}
-
-bool LineFollower::check_right_turn(void)
-{
-  int rightReading = analogRead(0);
-  if (rightReading > THRESHOLD) return true;
-  else return false;
 }
 
 /*
@@ -487,11 +372,9 @@ void LineFollower::serial_init(u_int baud)
 //========== WIRELESS CONTROL ========
 void LineFollower::wireless_control(void)
 {
-  if (Bluetooth.available() > 0)
-  {
+  if (Bluetooth.available() > 0){
     command = Bluetooth.read();
   }
-
   switch (command)
   {
     case 'w':
@@ -525,7 +408,6 @@ void LineFollower::wireless_control(bool debug_mode)
       command = Bluetooth.read();
       Serial.println("I received: " + String(command));
     }
-
     switch (command)
     {
       Bluetooth.println(command);
