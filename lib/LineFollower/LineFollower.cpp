@@ -531,30 +531,20 @@ void LineFollower::wireless_control(bool debug_mode)
       Bluetooth.println(command);
       case 'w':
         forward(defaultSpeed, defaultSpeed);
-        Bluetooth.println("FORWARD");
-        Serial.println("FORWARD");
         break;
       case 's':
         backward(defaultSpeed, defaultSpeed);
-        Bluetooth.println("BACKWARD");
-        Serial.println("BACKWARD");
         break;
       case 'a':
         left(defaultSpeed);
-        Bluetooth.println("LEFT");
-        Serial.println("LEFT");
         break;
       case 'd':
         right(defaultSpeed);
-        Bluetooth.println("RIGHT");
-        Serial.println("RIGHT");
         break;
       case 'r':
         wireless_debug();
         break;
       default:
-        Bluetooth.println("STOP");
-        Serial.println("STOP");
         stop();
         break;
     }
