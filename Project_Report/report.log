@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 15:39
 entering extended mode
 **./report.tex
 (report.tex
@@ -457,36 +457,30 @@ lse'[]
  []
 
 [21] [22] [23] [24] [25] [26] [27] [28]
-Overfull \hbox (18.99518pt too wide) in paragraph at lines 1019--1019
+Overfull \hbox (18.99518pt too wide) in paragraph at lines 996--996
 [][] [] \OT1/cmtt/m/n/14.4 for[] (u_int[] i[] =[] 0;[] i[] <[] sensors.size();[
 ] i++)[] pinMode(sensors[i],[]
  []
 
 [29]
-Overfull \hbox (26.40517pt too wide) in paragraph at lines 1019--1019
+Overfull \hbox (26.40517pt too wide) in paragraph at lines 996--996
 [][] [] [] [] \OT1/cmtt/m/n/14.4 cout[] <<[] "ir[] ["[] <<[] (i[] +[] 1)[] <<[]
  "][] =[] "[] <<[] analogRead(sensors[i])[]
  []
 
-
-Overfull \hbox (196.8349pt too wide) in paragraph at lines 1019--1019
-[][] [] [] [] \OT1/cmtt/m/n/14.4 Bluetooth.println("ir[] ["[] +[] String(i[] +[
-] 1)[] +[] "][] =[] "[] +[] String(analogRead(sensors[i])));[] 
- []
-
 [30]
-Overfull \hbox (41.22514pt too wide) in paragraph at lines 1019--1019
+Overfull \hbox (41.22514pt too wide) in paragraph at lines 996--996
 [][] [] \OT1/cmtt/m/n/14.4 Bluetooth.println("Calculated[] position:[] "[] +[] 
 String(read_line()));[] 
  []
 
 [31] [32]
-Overfull \hbox (11.58519pt too wide) in paragraph at lines 1019--1019
+Overfull \hbox (11.58519pt too wide) in paragraph at lines 996--996
 []\OT1/cmtt/m/n/14.4 LineFollower::LineFollower(u_int[] *lm,[] u_int[] *rm,[] v
 ector[] <u_int>[]
  []
 
-[33] [34] [35] [36] (report.aux) ) 
+[33] [34] [35] (report.aux) ) 
 Here is how much of TeX's memory you used:
  4608 strings out of 493634
  65207 string characters out of 3149412
@@ -495,19 +489,19 @@ Here is how much of TeX's memory you used:
  13851 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  28i,9n,34p,892b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (36 pages, 4480413 bytes).
+<E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><E:/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
+><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (35 pages, 4479687 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

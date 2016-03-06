@@ -826,7 +826,8 @@ void LineFollower::wireless_debug(void)
   long_delay;
   Bluetooth.println("======= ANALOG READING ===== ");
   for (u_int i = 0; i < sensors.size(); i++){
-    Bluetooth.println("ir [" + String(i + 1) + "] = " + String(analogRead(sensors[i])));
+  Bluetooth.println("ir [" + String(i + 1) + "] = " + 
+   String(analogRead(sensors[i]))); 
     short_delay;
   }
   Bluetooth.println("======= ANALOG READING END ===== ");
@@ -839,7 +840,7 @@ void LineFollower::wireless_debug(void)
   short_delay;
   
   for (u_int i = 0; i < sensors.size(); i++)
-    Bluetooth.print(digitalReading[i] + String(" "));
+  Bluetooth.print(digitalReading[i] + String(" ")); 
     
   Bluetooth.println();
   Bluetooth.println("====== DIGITAL READING END ======");
@@ -909,20 +910,6 @@ void LineFollower::conditional_drive(void)
   else stop();
 }
 
-bool LineFollower::check_left_turn(void)
-{
-  int leftReading = analogRead(7);
-  if (leftReading > THRESHOLD) return true;
-  else return false;
-}
-
-bool LineFollower::check_right_turn(void)
-{
-  int rightReading = analogRead(0);
-  if (rightReading > THRESHOLD) return true;
-  else return false;
-}
-
 /*
 //  =========== CONSTRUCTOR ==========
 */
@@ -986,30 +973,20 @@ void LineFollower::wireless_control(bool debug_mode)
       Bluetooth.println(command);
       case 'w':
         forward(defaultSpeed, defaultSpeed);
-        Bluetooth.println("FORWARD");
-        Serial.println("FORWARD");
         break;
       case 's':
         backward(defaultSpeed, defaultSpeed);
-        Bluetooth.println("BACKWARD");
-        Serial.println("BACKWARD");
         break;
       case 'a':
         left(defaultSpeed);
-        Bluetooth.println("LEFT");
-        Serial.println("LEFT");
         break;
       case 'd':
         right(defaultSpeed);
-        Bluetooth.println("RIGHT");
-        Serial.println("RIGHT");
         break;
       case 'r':
         wireless_debug();
         break;
       default:
-        Bluetooth.println("STOP");
-        Serial.println("STOP");
         stop();
         break;
     }
