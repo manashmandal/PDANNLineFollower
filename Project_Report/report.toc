@@ -1,54 +1,127 @@
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {subsection}{\numberline {1.1}Line detection mechanism}{3}
-\contentsline {paragraph}{Detecting line using IR}{3}
-\contentsline {paragraph}{Detecting line using LDR}{4}
-\contentsline {subsection}{\numberline {1.2}Algorithm for detecting line}{5}
-\contentsline {subsection}{\numberline {1.3}Getting current position of the robot using IR / LDR Array}{5}
-\contentsline {subsubsection}{\numberline {1.3.1}Algorithm for weighted positional value}{6}
-\contentsline {subsection}{\numberline {1.4}Conventional line following mechanism}{6}
-\contentsline {subsection}{\numberline {1.5}Drawbacks of line following robot based on differential drive system}{7}
-\contentsline {section}{\numberline {2}Machine Learning}{8}
-\contentsline {subsection}{\numberline {2.1}Model of an Artificial Neuron}{8}
-\contentsline {subsubsection}{\numberline {2.1.1}Basic structure}{9}
-\contentsline {subsubsection}{\numberline {2.1.2}Comparison to biological neurons}{9}
-\contentsline {subsubsection}{\numberline {2.1.3}Types of transfer functions}{10}
-\contentsline {paragraph}{Step Function}{11}
-\contentsline {paragraph}{Linear combination}{11}
-\contentsline {paragraph}{Sigmoid}{11}
-\contentsline {subsection}{\numberline {2.2}Artificial Neural Network}{11}
-\contentsline {subsection}{\numberline {2.3}Feedforward Neural Network}{12}
-\contentsline {subsubsection}{\numberline {2.3.1}Multi-layer perceptron}{13}
-\contentsline {subsubsection}{\numberline {2.3.2}Backpropagation}{14}
-\contentsline {subsubsection}{\numberline {2.3.3}Gradient descent}{14}
-\contentsline {section}{\numberline {3}Importance of the project}{14}
-\contentsline {section}{\numberline {4}Prototype construction}{14}
-\contentsline {subsection}{\numberline {4.1}Arduino Nano}{15}
-\contentsline {subsubsection}{\numberline {4.1.1}Technical Specifications}{16}
-\contentsline {subsection}{\numberline {4.2}QTR-8A Reflectance Sensor Array}{16}
-\contentsline {subsection}{\numberline {4.3}L298N Motor Driver}{17}
-\contentsline {subsection}{\numberline {4.4}Lithium-Polymer Battery}{17}
-\contentsline {subsection}{\numberline {4.5}Bluetooth Module}{17}
-\contentsline {paragraph}{Hardware Features}{18}
-\contentsline {subsection}{\numberline {4.6}Breadboard}{18}
-\contentsline {subsection}{\numberline {4.7}Premium Jumper Wire}{19}
-\contentsline {section}{\numberline {5}Sensor positioning of the prototype}{19}
-\contentsline {subsubsection}{\numberline {5.0.1}Bottom View}{19}
-\contentsline {subsubsection}{\numberline {5.0.2}Top View}{20}
-\contentsline {section}{\numberline {6}Circuit diagram}{21}
-\contentsline {section}{\numberline {7}Data collection process}{22}
-\contentsline {subsection}{\numberline {7.1}Processing code for driving and collecting data wirelessly}{22}
-\contentsline {subsection}{\numberline {7.2}Arduino code for the robotic prototype}{23}
-\contentsline {subsubsection}{\numberline {7.2.1}LineFollower.h}{23}
-\contentsline {subsubsection}{\numberline {7.2.2}LineFollower.cpp}{26}
-\contentsline {subsubsection}{\numberline {7.2.3}ANNLineFollower.ino}{36}
-\contentsline {subsubsection}{\numberline {7.2.4}Data collection using processing}{37}
-\contentsline {section}{\numberline {8}Proposed network configuration \& training}{38}
-\contentsline {subsection}{\numberline {8.1}Diagram of the proposed network}{38}
-\contentsline {subsection}{\numberline {8.2}Collected data}{39}
-\contentsline {subsection}{\numberline {8.3}Training in MATLAB}{39}
-\contentsline {subsubsection}{\numberline {8.3.1}Code used to train the network in MATLAB}{39}
-\contentsline {subsection}{\numberline {8.4}Extraction of weights and implementation on arduino}{41}
-\contentsline {subsubsection}{\numberline {8.4.1}NeuralNetworkConfig.h}{41}
-\contentsline {section}{\numberline {9}Testing the network}{47}
-\contentsline {subsection}{\numberline {9.1}ANNLineFollower.ino}{47}
-\contentsline {section}{\numberline {10}Discussion}{47}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Line detection mechanism}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Detecting line using IR}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Detecting line using LDR}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Algorithm for detecting line}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Getting current position of the robot using IR / LDR Array}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.1}Algorithm for weighted positional value}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Conventional line following mechanism}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5}Drawbacks of line following robot based on differential drive system}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Machine Learning}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Model of an Artificial Neuron}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Basic structure}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Comparison to biological neurons}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.3}Types of transfer functions}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Step Function}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Linear combination}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Sigmoid}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Artificial Neural Network}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Feedforward Neural Network}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Multi-layer perceptron}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}Backpropagation}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3}Gradient descent}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Importance of the project}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Prototype construction}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Arduino Nano}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Technical Specifications}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}QTR-8A Reflectance Sensor Array}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}L298N Motor Driver}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Lithium-Polymer Battery}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Bluetooth Module}{18}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Hardware Features}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6}Breadboard}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7}Premium Jumper Wire}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Sensor positioning of the prototype}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.0.1}Bottom view}{20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.0.2}Top view}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.0.3}Side view}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Circuit diagram}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Data collection process}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Processing code for driving and collecting data wirelessly}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Arduino code for the robotic prototype}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.2.1}LineFollower.h}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.2.2}LineFollower.cpp}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.2.3}ANNLineFollower.ino}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.2.4}Data collection using processing}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Proposed network configuration \& training}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Diagram of the proposed network}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Collected data}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3}Training in MATLAB}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.3.1}Code used to train the network in MATLAB}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4}Extraction of weights and implementation on arduino}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.4.1}NeuralNetworkConfig.h}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Testing the network}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}ANNLineFollower.ino}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Discussion}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Future Work}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}References}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{1. Artificial Neural Network, Wikipedia}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{2. Gradient Descent, Wikipedia}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{3. Arduino Reference}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{4. Pololu QTR}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{5. Neural Network for Arduino}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{6. Fritzing}{49}

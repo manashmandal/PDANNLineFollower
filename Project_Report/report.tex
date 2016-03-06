@@ -20,7 +20,8 @@
 \usepackage{tikz}
 \usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
 \usepackage{neuralnetwork}
-
+\usepackage{biblatex}
+\usepackage{url}
 
 
 
@@ -34,12 +35,15 @@
 
 \title{LINE FOLLOWING BEHAVIOR FOR AN AUTONOMOUS MOBILE ROBOT USING ARTIFICIAL NEURAL NETWORKS}
 
-\author{Manash Kumar Mandal\\ 1203043 \\ Department of Electrical \& Electronic Engineering \\ Khulna University of Engineering \& Technology}
+
+
+\author{}
 
 \date{}
 
 \maketitle
-	
+
+\newpage
 
 \tableofcontents
 
@@ -424,19 +428,26 @@ Weight	& 5 g\\ \hline
 
 	\section{Sensor positioning of the prototype}
 	
-		\subsubsection{Bottom View}
+		\subsubsection{Bottom view}
 			
 			\begin{figure} [H]
 				\includegraphics[height=7cm, center, width=\textwidth]{sensor_placement.png}
 				\caption{Placement of IR sensors}
 			\end{figure}
 			
-			\subsubsection{Top View}
+			\subsubsection{Top view}
 			
 			\begin{figure}[H]
 				\includegraphics[height=7cm, center, width=\textwidth]{bot.png}
 				\caption{Bottom view of the robot.}
 				\end{figure}
+				
+			\subsubsection{Side view}
+				
+				\begin{figure}[H]
+					\includegraphics[height=7cm, center, width=\textwidth]{robot.png}
+				\end{figure}
+			
 	
 	\section{Circuit diagram}
 	
@@ -1390,7 +1401,34 @@ void loop() { neural_network_drive(); }
 \section{Discussion}
 
 
+	Speed of the robot was reduced due to the huge number of calculations were required to move each step. If the speed of the robot was high, it would not follow the line properly, this problem can be tackled using less number of nodes in hidden layer, but it can also reduce the performance of the current network. So the speed was reduced by keeping higher number of nodes in the hidden layer. From figure \ref{fig:nntool} it can be seen that the error value was minimized to minimum within \textit{7} iterations. This artificial neural network based robot can follow any width of line where differential drive based or proportional derivative controller based robots are needed to be tuned after changing the track. 
 	
+	In this project, the trained network was implemented successfully and desired output was observed.
+	
+\section{Future Work}
+
+In future, this network can be trained with more inputs and outputs, at some situations, following line can be hard due to the complexity of the track. The track may have discontinued line or other angles e.g acute, right etc. To follow this kind of line, the robotic platform may need to calculate the delay time automatically to rotate to fix the position. Then the output layer will have three nodes, two for left and right motor output and another one will be for delay time. 
+
+
+\section{References}
+
+\paragraph{1. Artificial Neural Network, Wikipedia}
+ \url{https://en.wikipedia.org/wiki/Artificial_neural_network}
+
+\paragraph{2. Gradient Descent, Wikipedia} 
+\url{https://en.wikipedia.org/wiki/Gradient_descent}
+
+\paragraph{3. Arduino Reference}
+\url{https://www.arduino.cc/en/Reference/HomePage}
+
+\paragraph{4. Pololu QTR} 
+\url{https://www.pololu.com/product/961}
+
+\paragraph{5. Neural Network for Arduino}
+\url{http://robotics.hobbizine.com/arduinoann.html}
+
+\paragraph{6. Fritzing}
+\url{http://fritzing.org/learning/full_reference}
 	
 \end{document}
 
