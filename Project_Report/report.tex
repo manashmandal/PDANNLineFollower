@@ -294,10 +294,12 @@ The universal approximation theorem for neural networks states that every contin
 	
 	Backpropagation, an abbreviation for "backward propagation of errors", is a common method of training artificial neural networks used in conjunction with an optimization method such as gradient descent. The method calculates the gradient of a loss function with respect to all the weights in the network. The gradient is fed to the optimization method which in turn uses it to update the weights, in an attempt to minimize the loss function.
 	
+	
+	
 	\subsubsection{Gradient descent}
 	Gradient descent is a first-order optimization algorithm. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or of the approximate gradient) of the function at the current point.
-
-
+	
+ 
 	\section{Importance of the project}
 	
 	Robotics technology is emerging at a rapid pace, offering new possibilities for automating tasks in many challenging applications, especially in autonomous self driving vehicles. A lot of parameters and conditions and other necessary things are needed to be considered to build a complete autonomous self driving vehicles, yet making the vehicle to learn to follow the line of the path is one of the basic building blocks to build a complete autonomous self driving vehicles. The main objective of the project is to train a network and apply it on a autonomous line following prototype which can navigate autonomously at any line consisting of any width. 
@@ -421,6 +423,20 @@ Weight	& 5 g\\ \hline
 
 
 	\section{Sensor positioning of the prototype}
+	
+		\subsubsection{Bottom View}
+			
+			\begin{figure} [H]
+				\includegraphics[height=7cm, center, width=\textwidth]{sensor_placement.png}
+				\caption{Placement of IR sensors}
+			\end{figure}
+			
+			\subsubsection{Top View}
+			
+			\begin{figure}[H]
+				\includegraphics[height=7cm, center, width=\textwidth]{bot.png}
+				\caption{Bottom view of the robot.}
+				\end{figure}
 	
 	\section{Circuit diagram}
 	
@@ -1003,8 +1019,6 @@ void LineFollower::wireless_control(bool debug_mode)
 	\begin{spverbatim}
 #include <LineFollower.h>
 
-const u_int _speed = 100;
-
 //Sensor pins
 vector <u_int> qtr{0, 1, 2, 3, 4, 5, 6, 7};
 
@@ -1021,9 +1035,8 @@ void setup()
   LineFollowingRobot.set_speed(75);
 }
 
-void loop()
-{
-  LineFollowingRobot.wireless_control(true);
+void loop() {
+ LineFollowingRobot.wireless_control(true);
 }
 	\end{spverbatim}
 
@@ -1083,6 +1096,301 @@ ir1 & ir2 & ir3 & ir4 & ir5 & ir6 & ir7 & ir8 & left target & right target \\
 0   & 0   & 0   & 0   & 0   & 0   & 0   & 1   & 89          & 0           
 \end{tabular}
 \end{table}
+
+\subsection{Training in MATLAB}
+
+ \subsubsection{Code used to train the network in MATLAB}
+ 
+ \begin{spverbatim}
+net = newff( minmax(inputs) , [10 2], {`tansig' `tansig'},`trainlm',
+`learngdm',`mse');
+[trainInd ,valInd, testInd] = dividerand(0.70 ,0.15 ,0.15);
+net = train(net ,inputs ,targets);
+y = net(inputs);
+perf = perform(net, y, targets);
+e = targets - y;
+view(net);
+ploterrhist(e);
+ \end{spverbatim}
+ 
+ 	The training was being stopped by observing the mean square error value, gradient value and regression curve. The plots of these parameters are given in figure \ref{fig:nntool} and \ref{fig:performance}.
+ 	
+ 	\begin{figure}[H]
+ 		\includegraphics[height=21cm, scale = 0.5, center]{nntoolmatlab.png}
+ 		\caption{Training of the network}
+ 		\label{fig:nntool}
+ 	\end{figure}
+ 	
+ 	\begin{figure}[H]
+		\includegraphics[width=\textwidth]{traininggraphmatlab.png}
+		\caption{Performance of the trained network}
+		\label{fig:performance}
+	\end{figure}		
+	
+	\subsection{Extraction of weights and implementation on arduino}
+	
+	After successful training the weights were extracted using the following program in MATLAB.
+	
+	\begin{spverbatim}
+hidden = net.LW
+input = net.IW
+
+	\end{spverbatim}
+	
+	Neural network with extracted weights in \textit{NeuralNetworkConfig.h} file. 
+	
+	\subsubsection{NeuralNetworkConfig.h}
+	
+	\begin{spverbatim}
+#ifndef NEURAL_NETWORK_CONFIG_H_
+#define NEURAL_NETWORK_CONFIG_H_
+#include <LineFollower.h>
+
+const int PatternCount = 1;
+const int InputNodes = 8;
+const int HiddenNodes = 10;
+const int OutputNodes = 2;
+
+double Input[PatternCount][InputNodes];
+
+double Hidden[HiddenNodes];
+double Output[OutputNodes];
+double HiddenWeights[InputNodes][HiddenNodes];
+double OutputWeights[HiddenNodes][OutputNodes];
+
+//Variables
+double Accum;
+
+void updateInput(void)
+{
+  LineFollowingRobot.read_sensors();
+  for (u_int i = 0; i < LineFollowingRobot.digitalReading.size(); i++){
+    Input[0][i] = LineFollowingRobot.digitalReading[i];
+  }
+}
+
+void weights(void)
+{
+  //Input to Hidden Weights
+  //Hidden Weights for first IR
+  HiddenWeights[0][0] =0.025113 ;
+  HiddenWeights[0][1] =-0.761469 ;
+  HiddenWeights[0][2] = -0.054762 ;
+  HiddenWeights[0][3] = 1.929800;
+  HiddenWeights[0][4] =  0.896791;
+  HiddenWeights[0][5] = -0.642489 ;
+  HiddenWeights[0][6] = 2.283807 ;
+  HiddenWeights[0][7] = -3.604985 ;
+  HiddenWeights[0][8] = 1.723457 ;
+  HiddenWeights[0][9] =  -1.394811;
+
+  //Second
+  HiddenWeights[1][0] = -0.321062 ;
+  HiddenWeights[1][1] = -0.724505 ;
+  HiddenWeights[1][2] =  1.516371;
+  HiddenWeights[1][3] = -0.767078 ;
+  HiddenWeights[1][4] = -1.187555 ;
+  HiddenWeights[1][5] =  1.021865;
+  HiddenWeights[1][6] =  -1.131159;
+  HiddenWeights[1][7] = -1.998590 ;
+  HiddenWeights[1][8] =  2.275912;
+  HiddenWeights[1][9] =  0.562050;
+
+  //Third
+  HiddenWeights[2][0] =  -0.786959;
+  HiddenWeights[2][1] =  -0.081098;
+  HiddenWeights[2][2] = -1.879575 ;
+  HiddenWeights[2][3] = 0.454331 ;
+  HiddenWeights[2][4] =  -1.062709;
+  HiddenWeights[2][5] = -1.092372 ;
+  HiddenWeights[2][6] =  -0.779593;
+  HiddenWeights[2][7] = -1.295421 ;
+  HiddenWeights[2][8] =  -1.352029;
+  HiddenWeights[2][9] =  1.942178;
+
+  //Fourth
+  HiddenWeights[3][0] = -1.649061 ;
+  HiddenWeights[3][1] = 2.324182 ;
+  HiddenWeights[3][2] = 0.847181 ;
+  HiddenWeights[3][3] =  -2.225811;
+  HiddenWeights[3][4] = 0.355119 ;
+  HiddenWeights[3][5] = 0.863736 ;
+  HiddenWeights[3][6] = 1.617657 ;
+  HiddenWeights[3][7] = -0.254025 ;
+  HiddenWeights[3][8] = 0.677678 ;
+  HiddenWeights[3][9] = 1.868622 ;
+
+  //Fifth
+  HiddenWeights[4][0] = -1.018758 ;
+  HiddenWeights[4][1] = -0.144537 ;
+  HiddenWeights[4][2] = -2.582041 ;
+  HiddenWeights[4][3] =  -1.409654;
+  HiddenWeights[4][4] = -0.138546 ;
+  HiddenWeights[4][5] = 1.797844;
+  HiddenWeights[4][6] = 1.701960 ;
+  HiddenWeights[4][7] = 0.621565 ;
+  HiddenWeights[4][8] = -1.213992 ;
+  HiddenWeights[4][9] = 1.645741 ;
+
+  //Sixth
+  HiddenWeights[5][0] =  0.687452;
+  HiddenWeights[5][1] =  -1.621133;
+  HiddenWeights[5][2] =  1.418583;
+  HiddenWeights[5][3] = 1.517330 ;
+  HiddenWeights[5][4] =  1.647353;
+  HiddenWeights[5][5] = 0.370115 ;
+  HiddenWeights[5][6] = -0.048096 ;
+  HiddenWeights[5][7] =  0.469378;
+  HiddenWeights[5][8] = 0.525366 ;
+  HiddenWeights[5][9] = -0.811420 ;
+
+  //Seventh
+  HiddenWeights[6][0] = 0.153970 ;
+  HiddenWeights[6][1] = -1.806422 ;
+  HiddenWeights[6][2] =  0.755054;
+  HiddenWeights[6][3] =  -1.545513;
+  HiddenWeights[6][4] = -1.765307 ;
+  HiddenWeights[6][5] = 0.110509 ;
+  HiddenWeights[6][6] = -0.177388 ;
+  HiddenWeights[6][7] =  1.461557;
+  HiddenWeights[6][8] =  0.563469;
+  HiddenWeights[6][9] = 0.697234 ;
+
+  //Eighth
+  HiddenWeights[7][0] =  -1.936623;
+  HiddenWeights[7][1] =  -2.409954;
+  HiddenWeights[7][2] =  0.318658;
+  HiddenWeights[7][3] = 0.113455 ;
+  HiddenWeights[7][4] = 2.136323 ;
+  HiddenWeights[7][5] =  1.984139;
+  HiddenWeights[7][6] =  0.013263;
+  HiddenWeights[7][7] =  1.487560;
+  HiddenWeights[7][8] =  1.346021;
+  HiddenWeights[7][9] = 0.425384 ;
+  
+  //Hidden to Output weights
+  //1st
+  OutputWeights[0][0] =-1.252983 ;
+  OutputWeights[0][1] = 0.715766;
+
+  //2nd
+  OutputWeights[1][0] = -0.421231;
+  OutputWeights[1][1] =0.058311 ;
+
+  //3rd
+  OutputWeights[2][0] =-0.205985 ;
+  OutputWeights[2][1] =-0.834553 ;
+
+  //4th
+  OutputWeights[3][0] = -0.814466 ;
+  OutputWeights[3][1] = -0.548837;
+
+  //5th
+  OutputWeights[4][0] =0.521854 ;
+  OutputWeights[4][1] = 0.250546;
+
+  //6th
+  OutputWeights[5][0] = -2.152792 ;
+  OutputWeights[5][1] = 0.659315;
+
+  //7th
+  OutputWeights[6][0] = -0.306374;
+  OutputWeights[6][1] =  0.252961;
+
+  //8th
+  OutputWeights[7][0] =0.268343 ;
+  OutputWeights[7][1] = -0.854261 ;
+
+  //9th
+  OutputWeights[8][0] =  -2.098765;
+  OutputWeights[8][1] = 1.391521;
+
+  //10th
+  OutputWeights[9][0] = -0.595847;
+  OutputWeights[9][1] = -0.996570;
+}
+
+void calculateOutput(void)
+{
+  for(int p = 0 ; p < PatternCount ; p++ )
+  {
+    for(int i = 0 ; i < HiddenNodes ; i++ ) {
+      Accum = HiddenWeights[InputNodes][i];
+      for(int j = 0 ; j < InputNodes ; j++ ) {
+        Accum += Input[p][j] * HiddenWeights[j][i] ;
+      }
+      // Hidden[i] = 1.0/(1.0 + exp(-Accum)) ;
+
+      //Tansig
+      Hidden[i] = (2.0/ (1 + exp(-2 * Accum))) - 1;
+    }
+
+    for(int i = 0 ; i < OutputNodes ; i++ ) {
+      Accum = OutputWeights[HiddenNodes][i] ;
+      for(int j = 0 ; j < HiddenNodes ; j++ ) {
+        Accum += Hidden[j] * OutputWeights[j][i] ;
+      }
+      //Tansig
+     Output[i] = (2.0/ (1 + exp(-2 * Accum))) - 1;
+    }
+  }
+}
+
+void neural_network_drive(void)
+{
+  updateInput();
+  calculateOutput();
+  int lspeed = Output[0] * 100;
+  int rspeed = Output[1] * 100;
+
+  //Reduced speed
+  lspeed -= 15;
+  rspeed -= 15;
+  if (lspeed < 0) lspeed = -lspeed;
+  if (rspeed < 0) rspeed = -rspeed;
+  LineFollowingRobot.forward(lspeed, rspeed);
+}
+#endif
+
+	
+	\end{spverbatim}
+	
+	
+	\section{Testing the network}
+	
+	Following arduino program was used to test the network, it is the modified version of the wireless control program.
+	
+	\subsection{ANNLineFollower.ino} 
+	
+	\begin{verbatim}
+#include <LineFollower.h>
+#include <NeuralNetworkConfig.h>
+
+//Sensor pins
+vector <u_int> qtr{0, 1, 2, 3, 4, 5, 6, 7};
+
+u_int lm[] = {5, 3};
+u_int rm[] = {6, 9};
+
+LineFollower lineFollower(lm, rm, qtr);
+
+void setup()
+{
+  LineFollowingRobot.set_motors_pins(lm, rm);
+  LineFollowingRobot.set_sensors_pins(qtr);
+  LineFollowingRobot.init();
+  lineFollower.init();
+  weights();
+}
+
+void loop() { neural_network_drive(); }
+	\end{verbatim}
+	
+	
+\section{Discussion}
+
+
+	
 	
 \end{document}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 19:55
 entering extended mode
 **./report.tex
 (report.tex
@@ -790,27 +790,27 @@ anoFront_3_sm.jpg, id=77, 451.6875pt x 297.11pt>
 File: ArduinoNanoFront_3_sm.jpg Graphic file (type jpg)
 
 <use ArduinoNanoFront_3_sm.jpg>
-Package pdftex.def Info: ArduinoNanoFront_3_sm.jpg used on input line 319.
+Package pdftex.def Info: ArduinoNanoFront_3_sm.jpg used on input line 321.
 (pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
 
 <ArduinoNanoBack_3_sm.jpg, id=78, 451.6875pt x 297.11pt>
 File: ArduinoNanoBack_3_sm.jpg Graphic file (type jpg)
 
 <use ArduinoNanoBack_3_sm.jpg>
-Package pdftex.def Info: ArduinoNanoBack_3_sm.jpg used on input line 324.
+Package pdftex.def Info: ArduinoNanoBack_3_sm.jpg used on input line 326.
 (pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
 []\OT1/cmr/m/n/14.4 Operating Volt-age
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 343--343
+Underfull \hbox (badness 1158) in paragraph at lines 345--345
 []\OT1/cmr/m/n/14.4 DC Cur-rent per I/O
  []
 
 
-Overfull \hbox (52.45276pt too wide) in paragraph at lines 334--354
+Overfull \hbox (52.45276pt too wide) in paragraph at lines 336--356
 [] 
  []
 
@@ -818,83 +818,92 @@ Overfull \hbox (52.45276pt too wide) in paragraph at lines 334--354
 <qtr.jpg, id=82, 803.0pt x 554.07pt>
 File: qtr.jpg Graphic file (type jpg)
  <use qtr.jpg>
-Package pdftex.def Info: qtr.jpg used on input line 361.
+Package pdftex.def Info: qtr.jpg used on input line 363.
 (pdftex.def)             Requested size: 224.83847pt x 155.13853pt.
 
 <l298n.jpg, id=83, 602.25pt x 477.82515pt>
 File: l298n.jpg Graphic file (type jpg)
  <use l298n.jpg>
-Package pdftex.def Info: l298n.jpg used on input line 370.
+Package pdftex.def Info: l298n.jpg used on input line 372.
 (pdftex.def)             Requested size: 301.12425pt x 238.91199pt.
  [16 <./qtr.jpg>]
 <lipo.jpg, id=87, 150.453pt x 90.009pt>
 File: lipo.jpg Graphic file (type jpg)
  <use lipo.jpg>
-Package pdftex.def Info: lipo.jpg used on input line 379.
+Package pdftex.def Info: lipo.jpg used on input line 381.
 (pdftex.def)             Requested size: 150.45264pt x 90.00876pt.
  [17 <./l298n.jpg> <./lipo.jpg>] <hc05.jpg, id=91, 225.84375pt x 225.84375pt>
 File: hc05.jpg Graphic file (type jpg)
  <use hc05.jpg>
-Package pdftex.def Info: hc05.jpg used on input line 400.
+Package pdftex.def Info: hc05.jpg used on input line 402.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
 
 <breadboard.jpg, id=92, 149.4675pt x 99.864pt>
 File: breadboard.jpg Graphic file (type jpg)
  <use breadboard.jpg>
-Package pdftex.def Info: breadboard.jpg used on input line 409.
+Package pdftex.def Info: breadboard.jpg used on input line 411.
 (pdftex.def)             Requested size: 149.46712pt x 99.86374pt.
  [18 <./hc05.jpg>] <jumper.jpg, id=96, 124.83pt x 93.6225pt>
 File: jumper.jpg Graphic file (type jpg)
  <use jumper.jpg>
-Package pdftex.def Info: jumper.jpg used on input line 418.
+Package pdftex.def Info: jumper.jpg used on input line 420.
 (pdftex.def)             Requested size: 124.82968pt x 93.62225pt.
 
-<ckt_diagram.png, id=97, 529.98pt x 713.064pt>
+<sensor_placement.png, id=97, 1780.40157pt x 1298.60156pt>
+File: sensor_placement.png Graphic file (type png)
+
+<use sensor_placement.png>
+Package pdftex.def Info: sensor_placement.png used on input line 430.
+(pdftex.def)             Requested size: 273.05255pt x 199.16928pt.
+ <bot.png, id=98, 2063.45906pt x 1533.47906pt>
+File: bot.png Graphic file (type png)
+
+<use bot.png>
+Package pdftex.def Info: bot.png used on input line 437.
+(pdftex.def)             Requested size: 267.97572pt x 199.16928pt.
+ [19 <./breadboard.jpg> <./jumper.jpg> <./sensor_placement.png>]
+<ckt_diagram.png, id=103, 529.98pt x 713.064pt>
 File: ckt_diagram.png Graphic file (type png)
  <use ckt_diagram.png>
-Package pdftex.def Info: ckt_diagram.png used on input line 428.
+Package pdftex.def Info: ckt_diagram.png used on input line 444.
 (pdftex.def)             Requested size: 529.97868pt x 713.06226pt.
- [19 <./breadboard.jpg> <./jumper.jpg>]
-Overfull \vbox (0.34137pt too high) has occurred while \output is active []
-
-
-[20 <./ckt_diagram.png>]
-Overfull \hbox (4.1752pt too wide) in paragraph at lines 481--481
+ [20 <./bot.png>] [21 <./ckt_diagram.png>]
+Overfull \hbox (4.1752pt too wide) in paragraph at lines 497--497
 []\OT1/cmtt/m/n/14.4 //Checking if any key was pressed, initializing with a 'fa
 lse'[] 
  []
 
-[21] [22] [23] [24] [25] [26] [27] [28]
-Overfull \hbox (18.99518pt too wide) in paragraph at lines 999--999
+[22] [23] [24] [25] [26] [27] [28] [29]
+Overfull \hbox (18.99518pt too wide) in paragraph at lines 1015--1015
 [][] [] \OT1/cmtt/m/n/14.4 for[] (u_int[] i[] =[] 0;[] i[] <[] sensors.size();[
 ] i++)[] pinMode(sensors[i],[]
  []
 
-[29]
-Overfull \hbox (26.40517pt too wide) in paragraph at lines 999--999
+[30]
+Overfull \hbox (26.40517pt too wide) in paragraph at lines 1015--1015
 [][] [] [] [] \OT1/cmtt/m/n/14.4 cout[] <<[] "ir[] ["[] <<[] (i[] +[] 1)[] <<[]
  "][] =[] "[] <<[] analogRead(sensors[i])[]
  []
 
-[30]
-Overfull \hbox (41.22514pt too wide) in paragraph at lines 999--999
+[31]
+Overfull \hbox (41.22514pt too wide) in paragraph at lines 1015--1015
 [][] [] \OT1/cmtt/m/n/14.4 Bluetooth.println("Calculated[] position:[] "[] +[] 
 String(read_line()));[] 
  []
 
-[31] [32]
-Overfull \hbox (11.58519pt too wide) in paragraph at lines 999--999
+[32] [33]
+Overfull \hbox (11.58519pt too wide) in paragraph at lines 1015--1015
 []\OT1/cmtt/m/n/14.4 LineFollower::LineFollower(u_int[] *lm,[] u_int[] *rm,[] v
 ector[] <u_int>[]
  []
 
-[33] [34] <processing.png, id=151, 574.39594pt x 660.21657pt>
+[34] [35] <processing.png, id=156, 574.39594pt x 660.21657pt>
 File: processing.png Graphic file (type png)
 
 <use processing.png>
-Package pdftex.def Info: processing.png used on input line 1034.
+Package pdftex.def Info: processing.png used on input line 1047.
 (pdftex.def)             Requested size: 229.75429pt x 264.08194pt.
- [35]
+ [36]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1013,32 +1022,57 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (94.88364pt too wide) in paragraph at lines 1054--1055
+Overfull \hbox (94.88364pt too wide) in paragraph at lines 1067--1068
 [] 
  []
 
-[36 <./processing.png>] [37] [38] (report.aux) ) 
+[37 <./processing.png>] [38]
+Overfull \hbox (48.63513pt too wide) in paragraph at lines 1114--1114
+[]\OT1/cmtt/m/n/14.4 net[] =[] newff([] minmax(inputs)[] ,[] [10[] 2],[] {`tans
+ig'[] `tansig'},`trainlm',[] 
+ []
+
+[39] <nntoolmatlab.png, id=171, 354.57469pt x 516.42938pt>
+File: nntoolmatlab.png Graphic file (type png)
+
+<use nntoolmatlab.png>
+Package pdftex.def Info: nntoolmatlab.png used on input line 1119.
+(pdftex.def)             Requested size: 177.28691pt x 258.21405pt.
+
+<traininggraphmatlab.png, id=172, 907.89188pt x 525.46312pt>
+File: traininggraphmatlab.png Graphic file (type png)
+
+<use traininggraphmatlab.png>
+Package pdftex.def Info: traininggraphmatlab.png used on input line 1125.
+(pdftex.def)             Requested size: 455.24408pt x 263.48459pt.
+ [40 <./nntoolmatlab.png>] [41 <./traininggraphmatlab.png>]
+Overfull \hbox (26.40517pt too wide) in paragraph at lines 1356--1356
+[][] [] \OT1/cmtt/m/n/14.4 for[] (u_int[] i[] =[] 0;[] i[] <[] LineFollowingRob
+ot.digitalReading.size();[]
+ []
+
+[42] [43] [44] [45] [46] [47] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 18763 strings out of 493634
- 383083 string characters out of 3149412
- 510614 words of memory out of 3000000
- 21759 multiletter control sequences out of 15000+200000
+ 18784 strings out of 493634
+ 383515 string characters out of 3149412
+ 510751 words of memory out of 3000000
+ 21777 multiletter control sequences out of 15000+200000
  13851 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,9n,72p,892b,1102s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti1
-0.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E
-:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmti12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (38 pages, 4569125 bytes).
+<E:/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (47 pages, 20650292 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
+ 241 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
