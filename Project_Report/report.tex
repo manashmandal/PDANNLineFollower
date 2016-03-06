@@ -16,9 +16,8 @@
 \usepackage[noend]{algpseudocode}
 \usepackage{subfigure}
 \usepackage{listings}
-\usepackage{fontspec}
-\newfontfamily\Consolas{Consolas}
-\lstset{basicstyle=\Consolas}
+
+
 
 
 %Use helvetica as sans serif
@@ -419,13 +418,65 @@ Weight	& 5 g\\ \hline
 
 	\section{Sensor positioning of the prototype}
 	
+	\section{Circuit diagram}
+	
+		\begin{figure}[H]
+			\includegraphics[center]{ckt_diagram.png}
+			\caption{Circuit diagram of the robotic platform.}
+		\end{figure}
+	
 	
 	\section{Data collection process}
 	
 	\subsection{Processing code for driving the robot wirelessly}
 	
-	
+		\begin{verbatim}
+		
+				import processing.serial.*;
+int value = 0;
+int width = 50;
+int height = 50;
+final int baud = 9600;
 
+Serial arduino;
+
+void setup(){
+  String arduinoPort = "COM12";
+  println(Serial.list());
+  arduino = new Serial(this, arduinoPort, baud);
+}
+
+char old_key = '0';
+char new_key = '1';
+
+//Checking if any key was pressed, initializing with a 'false'
+boolean wasPressed = false;
+
+void serialEvent(Serial port){
+  String inByte = port.readStringUntil('\n');
+  if (inByte != null) println(inByte);
+}
+
+void draw(){
+  if (keyPressed == true){
+    new_key = key;
+    if (new_key != old_key) {
+      arduino.write(key);
+    }
+    wasPressed = true;
+  } else {
+    if (wasPressed == true){
+      new_key = 'z';
+      arduino.write('z');
+      wasPressed = false;
+    }
+  }
+  old_key = new_key;
+}
+		
+		\end{verbatim}
+
+	
 
 
 \end{document}
