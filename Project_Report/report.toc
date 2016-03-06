@@ -40,3 +40,6 @@
 \contentsline {subsubsection}{\numberline {7.2.2}LineFollower.cpp}{25}
 \contentsline {subsubsection}{\numberline {7.2.3}ANNLineFollower.ino}{35}
 \contentsline {subsubsection}{\numberline {7.2.4}Data collection using processing}{36}
+\contentsline {section}{\numberline {8}Proposed network configuration \& training}{37}
+\contentsline {subsection}{\numberline {8.1}Diagram of the proposed network}{37}
+\contentsline {subsection}{\numberline {8.2}Collected data}{38}

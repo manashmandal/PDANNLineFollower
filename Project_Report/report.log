@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 19:11
 entering extended mode
 **./report.tex
 (report.tex
@@ -255,97 +255,505 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ("E:\MiKTeX 2.9\tex\latex\spverbatim\spverbatim.sty"
 Package: spverbatim 2009/08/10 v1.0 Verbatim with breakable spaces
 )
-("E:\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
+("E:\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("E:\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("E:\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen131
+\pgfutil@tempdimb=\dimen132
+
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex"))
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box34
+
+("E:\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("E:\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("E:\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("E:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen133
+\pgf@y=\dimen134
+\pgf@xa=\dimen135
+\pgf@ya=\dimen136
+\pgf@xb=\dimen137
+\pgf@yb=\dimen138
+\pgf@xc=\dimen139
+\pgf@yc=\dimen140
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count124
+\c@pgf@countb=\count125
+\c@pgf@countc=\count126
+\c@pgf@countd=\count127
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+
+("E:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("E:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("E:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count128
+\pgfsyssoftpath@bigbuffer@items=\count129
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("E:\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("E:\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen141
+\pgfmath@count=\count130
+\pgfmath@box=\box35
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex")
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.t
+ex"))) ("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count131
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen142
+\pgf@picmaxx=\dimen143
+\pgf@picminy=\dimen144
+\pgf@picmaxy=\dimen145
+\pgf@pathminx=\dimen146
+\pgf@pathmaxx=\dimen147
+\pgf@pathminy=\dimen148
+\pgf@pathmaxy=\dimen149
+\pgf@xx=\dimen150
+\pgf@xy=\dimen151
+\pgf@yx=\dimen152
+\pgf@yy=\dimen153
+\pgf@zx=\dimen154
+\pgf@zy=\dimen155
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen156
+\pgf@path@lasty=\dimen157
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen158
+\pgf@shorten@start@additional=\dimen159
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box36
+\pgf@hbox=\box37
+\pgf@layerbox@main=\box38
+\pgf@picture@serial@count=\count132
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen160
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen161
+\pgf@pt@y=\dimen162
+\pgf@pt@temp=\dimen163
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen164
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen165
+\pgf@sys@shading@range@num=\count133
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box39
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("E:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box40
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("E:\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen166
+\pgf@nodesepend=\dimen167
+)
+("E:\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("E:\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("E:\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("E:\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("E:\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen168
+\pgffor@skip=\dimen169
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count134
+\pgfplotmarksize=\dimen170
+)
+\tikz@lastx=\dimen171
+\tikz@lasty=\dimen172
+\tikz@lastxsaved=\dimen173
+\tikz@lastysaved=\dimen174
+\tikzleveldistance=\dimen175
+\tikzsiblingdistance=\dimen176
+\tikz@figbox=\box41
+\tikz@figbox@bg=\box42
+\tikz@tempbox=\box43
+\tikz@tempbox@bg=\box44
+\tikztreelevel=\count135
+\tikznumberofchildren=\count136
+\tikznumberofcurrentchild=\count137
+\tikz@fig@count=\count138
+
+("E:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count139
+\pgfmatrixcurrentcolumn=\count140
+\pgf@matrix@numberofcolumns=\count141
+)
+\tikz@expandcount=\count142
+
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths
+.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.
+code.tex"
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarychains.
+code.tex"
+File: tikzlibrarychains.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.6)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositio
+ning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorat
+ions.pathreplacing.code.tex"
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorat
+ions.code.tex"
+("E:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen177
+\pgfdecoratedremainingdistance=\dimen178
+\pgfdecoratedinputsegmentcompleteddistance=\dimen179
+\pgfdecoratedinputsegmentremainingdistance=\dimen180
+\pgf@decorate@distancetomove=\dimen181
+\pgf@decorate@repeatstate=\count143
+\pgfdecorationsegmentamplitude=\dimen182
+\pgfdecorationsegmentlength=\dimen183
+)
+\tikz@lib@dec@box=\box45
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pat
+hreplacing.code.tex"))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.
+code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+ ("E:\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen184
+)) ("E:\MiKTeX 2.9\tex\latex\neuralnetwork\neuralnetwork.sty"
+Package: neuralnetwork 2013/07/18 v1.0 Neural network diagrams, Mark Kuckian Co
+wan, mark@battlesnake.co.uk
+
+("E:\MiKTeX 2.9\tex\latex\environ\environ.sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("E:\MiKTeX 2.9\tex\latex\trimspaces\trimspaces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+("E:\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count144
+)
+("E:\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+("E:\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count145
+\calc@Bcount=\count146
+\calc@Adimen=\dimen185
+\calc@Bdimen=\dimen186
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count147
+\calc@Cskip=\skip57
+)
+("E:\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count148
+\l_MT_multwidth_dim=\dimen187
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen188
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen189
+\l_MT_above_intertext_sep=\dimen190
+\l_MT_below_intertext_sep=\dimen191
+\l_MT_above_shortintertext_sep=\dimen192
+\l_MT_below_shortintertext_sep=\dimen193
+)
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+code.tex"
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.cod
+e.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.misc.code.tex
+"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.symbols.code.
+tex"
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.arrows.code.t
+ex"
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+callouts.code.tex"
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.callouts.code
+.tex"))
+("E:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("E:\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.multipart.cod
+e.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box46
+\pgfnodeparttwobox=\box47
+\pgfnodepartthreebox=\box48
+\pgfnodepartfourbox=\box49
+\pgfnodeparttwentybox=\box50
+\pgfnodepartnineteenbox=\box51
+\pgfnodeparteighteenbox=\box52
+\pgfnodepartseventeenbox=\box53
+\pgfnodepartsixteenbox=\box54
+\pgfnodepartfifteenbox=\box55
+\pgfnodepartfourteenbox=\box56
+\pgfnodepartthirteenbox=\box57
+\pgfnodeparttwelvebox=\box58
+\pgfnodepartelevenbox=\box59
+\pgfnodeparttenbox=\box60
+\pgfnodepartninebox=\box61
+\pgfnodeparteightbox=\box62
+\pgfnodepartsevenbox=\box63
+\pgfnodepartsixbox=\box64
+\pgfnodepartfivebox=\box65
+)))) ("E:\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 ("E:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen131
-\scratchbox=\box34
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen132
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count149
+\scratchdimen=\dimen194
+\scratchbox=\box66
+\nofMPsegments=\count150
+\nofMParguments=\count151
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count152
+\MPscratchDim=\dimen195
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
+\everyMPtoPDFconversion=\toks39
 )
-\c@lstlisting=\count130
- (report.toc [1
+\c@lstlisting=\count155
+ ABD: EveryShipout initializing macros (report.toc [1
 
 {C:/Users/Manash/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
-\tf@toc=\write3
-\openout3 = `report.toc'.
+\tf@toc=\write4
+\openout4 = `report.toc'.
 
  [2]
-Overfull \hbox (1.22987pt too wide) in paragraph at lines 54--55
+Overfull \hbox (1.22987pt too wide) in paragraph at lines 57--58
 []\OT1/cmr/bx/it/14.4 Keywords- \OT1/cmr/m/n/14.4 Feed-for-ward Neu-ral Net-wor
 k, Ma-chine Learn-ing, Robotics,
  []
 
-<ir_line.png, id=11, 602.25pt x 293.095pt>
+<ir_line.png, id=14, 602.25pt x 293.095pt>
 File: ir_line.png Graphic file (type png)
  <use ir_line.png>
-Package pdftex.def Info: ir_line.png used on input line 70.
+Package pdftex.def Info: ir_line.png used on input line 73.
 (pdftex.def)             Requested size: 455.24408pt x 221.56041pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3] <ldr_line.jpg, id=18, 501.875pt x 236.885pt>
+[3] <ldr_line.jpg, id=21, 501.875pt x 236.885pt>
 File: ldr_line.jpg Graphic file (type jpg)
  <use ldr_line.jpg>
-Package pdftex.def Info: ldr_line.jpg used on input line 79.
+Package pdftex.def Info: ldr_line.jpg used on input line 82.
 (pdftex.def)             Requested size: 455.24408pt x 214.88614pt.
 
-Overfull \hbox (55.6588pt too wide) in paragraph at lines 94--95
+Overfull \hbox (55.6588pt too wide) in paragraph at lines 97--98
 [] $\OML/cmm/m/it/14.4 threshold \OMS/cmsy/m/n/14.4   []$ 
  []
 
 [4 <./ir_line.png> <./ldr_line.jpg>] [5]
-<line-tracking-robot-steering.png, id=30, 652.4375pt x 518.93875pt>
+<line-tracking-robot-steering.png, id=33, 652.4375pt x 518.93875pt>
 File: line-tracking-robot-steering.png Graphic file (type png)
 
 <use line-tracking-robot-steering.png>
 Package pdftex.def Info: line-tracking-robot-steering.png used on input line 14
-3.
+6.
 (pdftex.def)             Requested size: 455.24408pt x 362.10649pt.
  [6] [7 <./line-tracking-robot-steering.png>] <data_classification_svm.png, id=
-39, 803.0pt x 865.2325pt>
+42, 803.0pt x 865.2325pt>
 File: data_classification_svm.png Graphic file (type png)
 
 <use data_classification_svm.png>
-Package pdftex.def Info: data_classification_svm.png used on input line 174.
+Package pdftex.def Info: data_classification_svm.png used on input line 177.
 (pdftex.def)             Requested size: 227.62204pt x 245.26039pt.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
  [8 <./data_classification_svm.png>]
-<Artificial_neuron.png, id=45, 273.02pt x 187.70125pt>
+<Artificial_neuron.png, id=48, 273.02pt x 187.70125pt>
 File: Artificial_neuron.png Graphic file (type png)
 
 <use Artificial_neuron.png>
-Package pdftex.def Info: Artificial_neuron.png used on input line 195.
+Package pdftex.def Info: Artificial_neuron.png used on input line 198.
 (pdftex.def)             Requested size: 245.71573pt x 168.92957pt.
  [9 <./Artificial_neuron.png>] [10]
-Overfull \hbox (1.96196pt too wide) in paragraph at lines 253--254
+Overfull \hbox (1.96196pt too wide) in paragraph at lines 256--257
 \OT1/cmr/m/n/14.4 In ma-chine learn-ing and cog-ni-tive sci-ence, ar-ti-fi-cial
  neu-ral net-works (ANNs)
  []
@@ -357,157 +765,280 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- <neural_net_example.png, id=58, 301.125pt x 362.35374pt>
+ <neural_net_example.png, id=61, 301.125pt x 362.35374pt>
 File: neural_net_example.png Graphic file (type png)
 
 <use neural_net_example.png>
-Package pdftex.def Info: neural_net_example.png used on input line 262.
+Package pdftex.def Info: neural_net_example.png used on input line 265.
 (pdftex.def)             Requested size: 182.09485pt x 219.12793pt.
 
-<Feed_forward_neural_net.png, id=59, 286.06876pt x 331.2375pt>
+<Feed_forward_neural_net.png, id=62, 286.06876pt x 331.2375pt>
 File: Feed_forward_neural_net.png Graphic file (type png)
 
 <use Feed_forward_neural_net.png>
-Package pdftex.def Info: Feed_forward_neural_net.png used on input line 274.
+Package pdftex.def Info: Feed_forward_neural_net.png used on input line 277.
 (pdftex.def)             Requested size: 182.09485pt x 210.849pt.
  [12 <./neural_net_example.png>]
-<XOR_perceptron_net.png, id=64, 250.9375pt x 248.93pt>
+<XOR_perceptron_net.png, id=67, 250.9375pt x 248.93pt>
 File: XOR_perceptron_net.png Graphic file (type png)
 
 <use XOR_perceptron_net.png>
-Package pdftex.def Info: XOR_perceptron_net.png used on input line 285.
+Package pdftex.def Info: XOR_perceptron_net.png used on input line 288.
 (pdftex.def)             Requested size: 182.09485pt x 180.64624pt.
  [13 <./Feed_forward_neural_net.png> <./XOR_perceptron_net.png>] [14] <ArduinoN
-anoFront_3_sm.jpg, id=74, 451.6875pt x 297.11pt>
+anoFront_3_sm.jpg, id=77, 451.6875pt x 297.11pt>
 File: ArduinoNanoFront_3_sm.jpg Graphic file (type jpg)
 
 <use ArduinoNanoFront_3_sm.jpg>
-Package pdftex.def Info: ArduinoNanoFront_3_sm.jpg used on input line 316.
+Package pdftex.def Info: ArduinoNanoFront_3_sm.jpg used on input line 319.
 (pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
 
-<ArduinoNanoBack_3_sm.jpg, id=75, 451.6875pt x 297.11pt>
+<ArduinoNanoBack_3_sm.jpg, id=78, 451.6875pt x 297.11pt>
 File: ArduinoNanoBack_3_sm.jpg Graphic file (type jpg)
 
 <use ArduinoNanoBack_3_sm.jpg>
-Package pdftex.def Info: ArduinoNanoBack_3_sm.jpg used on input line 321.
+Package pdftex.def Info: ArduinoNanoBack_3_sm.jpg used on input line 324.
 (pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
 []\OT1/cmr/m/n/14.4 Operating Volt-age
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 340--340
+Underfull \hbox (badness 1158) in paragraph at lines 343--343
 []\OT1/cmr/m/n/14.4 DC Cur-rent per I/O
  []
 
 
-Overfull \hbox (52.45276pt too wide) in paragraph at lines 331--351
+Overfull \hbox (52.45276pt too wide) in paragraph at lines 334--354
 [] 
  []
 
 [15 <./ArduinoNanoFront_3_sm.jpg> <./ArduinoNanoBack_3_sm.jpg>]
-<qtr.jpg, id=79, 803.0pt x 554.07pt>
+<qtr.jpg, id=82, 803.0pt x 554.07pt>
 File: qtr.jpg Graphic file (type jpg)
  <use qtr.jpg>
-Package pdftex.def Info: qtr.jpg used on input line 358.
+Package pdftex.def Info: qtr.jpg used on input line 361.
 (pdftex.def)             Requested size: 224.83847pt x 155.13853pt.
 
-<l298n.jpg, id=80, 602.25pt x 477.82515pt>
+<l298n.jpg, id=83, 602.25pt x 477.82515pt>
 File: l298n.jpg Graphic file (type jpg)
  <use l298n.jpg>
-Package pdftex.def Info: l298n.jpg used on input line 367.
+Package pdftex.def Info: l298n.jpg used on input line 370.
 (pdftex.def)             Requested size: 301.12425pt x 238.91199pt.
  [16 <./qtr.jpg>]
-<lipo.jpg, id=84, 150.453pt x 90.009pt>
+<lipo.jpg, id=87, 150.453pt x 90.009pt>
 File: lipo.jpg Graphic file (type jpg)
  <use lipo.jpg>
-Package pdftex.def Info: lipo.jpg used on input line 376.
+Package pdftex.def Info: lipo.jpg used on input line 379.
 (pdftex.def)             Requested size: 150.45264pt x 90.00876pt.
- [17 <./l298n.jpg> <./lipo.jpg>] <hc05.jpg, id=88, 225.84375pt x 225.84375pt>
+ [17 <./l298n.jpg> <./lipo.jpg>] <hc05.jpg, id=91, 225.84375pt x 225.84375pt>
 File: hc05.jpg Graphic file (type jpg)
  <use hc05.jpg>
-Package pdftex.def Info: hc05.jpg used on input line 397.
+Package pdftex.def Info: hc05.jpg used on input line 400.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
 
-<breadboard.jpg, id=89, 149.4675pt x 99.864pt>
+<breadboard.jpg, id=92, 149.4675pt x 99.864pt>
 File: breadboard.jpg Graphic file (type jpg)
  <use breadboard.jpg>
-Package pdftex.def Info: breadboard.jpg used on input line 406.
+Package pdftex.def Info: breadboard.jpg used on input line 409.
 (pdftex.def)             Requested size: 149.46712pt x 99.86374pt.
- [18 <./hc05.jpg>] <jumper.jpg, id=93, 124.83pt x 93.6225pt>
+ [18 <./hc05.jpg>] <jumper.jpg, id=96, 124.83pt x 93.6225pt>
 File: jumper.jpg Graphic file (type jpg)
  <use jumper.jpg>
-Package pdftex.def Info: jumper.jpg used on input line 415.
+Package pdftex.def Info: jumper.jpg used on input line 418.
 (pdftex.def)             Requested size: 124.82968pt x 93.62225pt.
 
-<ckt_diagram.png, id=94, 529.98pt x 713.064pt>
+<ckt_diagram.png, id=97, 529.98pt x 713.064pt>
 File: ckt_diagram.png Graphic file (type png)
  <use ckt_diagram.png>
-Package pdftex.def Info: ckt_diagram.png used on input line 425.
+Package pdftex.def Info: ckt_diagram.png used on input line 428.
 (pdftex.def)             Requested size: 529.97868pt x 713.06226pt.
  [19 <./breadboard.jpg> <./jumper.jpg>]
 Overfull \vbox (0.34137pt too high) has occurred while \output is active []
 
 
 [20 <./ckt_diagram.png>]
-Overfull \hbox (4.1752pt too wide) in paragraph at lines 478--478
+Overfull \hbox (4.1752pt too wide) in paragraph at lines 481--481
 []\OT1/cmtt/m/n/14.4 //Checking if any key was pressed, initializing with a 'fa
 lse'[] 
  []
 
 [21] [22] [23] [24] [25] [26] [27] [28]
-Overfull \hbox (18.99518pt too wide) in paragraph at lines 996--996
+Overfull \hbox (18.99518pt too wide) in paragraph at lines 999--999
 [][] [] \OT1/cmtt/m/n/14.4 for[] (u_int[] i[] =[] 0;[] i[] <[] sensors.size();[
 ] i++)[] pinMode(sensors[i],[]
  []
 
 [29]
-Overfull \hbox (26.40517pt too wide) in paragraph at lines 996--996
+Overfull \hbox (26.40517pt too wide) in paragraph at lines 999--999
 [][] [] [] [] \OT1/cmtt/m/n/14.4 cout[] <<[] "ir[] ["[] <<[] (i[] +[] 1)[] <<[]
  "][] =[] "[] <<[] analogRead(sensors[i])[]
  []
 
 [30]
-Overfull \hbox (41.22514pt too wide) in paragraph at lines 996--996
+Overfull \hbox (41.22514pt too wide) in paragraph at lines 999--999
 [][] [] \OT1/cmtt/m/n/14.4 Bluetooth.println("Calculated[] position:[] "[] +[] 
 String(read_line()));[] 
  []
 
 [31] [32]
-Overfull \hbox (11.58519pt too wide) in paragraph at lines 996--996
+Overfull \hbox (11.58519pt too wide) in paragraph at lines 999--999
 []\OT1/cmtt/m/n/14.4 LineFollower::LineFollower(u_int[] *lm,[] u_int[] *rm,[] v
 ector[] <u_int>[]
  []
 
-[33] [34] <processing.png, id=148, 574.39594pt x 660.21657pt>
+[33] [34] <processing.png, id=151, 574.39594pt x 660.21657pt>
 File: processing.png Graphic file (type png)
 
 <use processing.png>
-Package pdftex.def Info: processing.png used on input line 1031.
+Package pdftex.def Info: processing.png used on input line 1034.
 (pdftex.def)             Requested size: 229.75429pt x 264.08194pt.
- [35] [36 <./processing.png>] (report.aux) ) 
+ [35]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+\c@nn@layerindex@counter=\count156
+\c@nn@lastlayerstart@counter=\count157
+\c@nn@thislayerstart@counter=\count158
+\c@nn@lastlayercount@counter=\count159
+\c@nn@thislayercount@counter=\count160
+\c@nn@lastlayerindex@counter=\count161
+\c@nn@thislayerindex@counter=\count162
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (94.88364pt too wide) in paragraph at lines 1054--1055
+[] 
+ []
+
+[36 <./processing.png>] [37] [38] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 4613 strings out of 493634
- 65296 string characters out of 3149412
- 130965 words of memory out of 3000000
- 7912 multiletter control sequences out of 15000+200000
+ 18763 strings out of 493634
+ 383083 string characters out of 3149412
+ 510614 words of memory out of 3000000
+ 21759 multiletter control sequences out of 15000+200000
  13851 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 28i,9n,34p,892b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pf
-b><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmti12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (36 pages, 4559795 bytes).
+ 55i,9n,72p,892b,1102s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti1
+0.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E
+:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (38 pages, 4569125 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 209 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

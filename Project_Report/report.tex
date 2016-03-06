@@ -17,6 +17,9 @@
 \usepackage{subfigure}
 \usepackage{listings}
 \usepackage{spverbatim}
+\usepackage{tikz}
+\usetikzlibrary{matrix,chains,positioning,decorations.pathreplacing,arrows}
+\usepackage{neuralnetwork}
 
 
 
@@ -1031,7 +1034,56 @@ void loop()
 		\includegraphics[width=\textwidth, scale=.4]{processing.png}
 		\caption{Robot controller \& data collector using processing}
 	\end{figure}
-
+	
+	
+	\section{Proposed network configuration \& training}
+	
+	\subsection{Diagram of the proposed network}
+	
+	\begin{neuralnetwork}[height=10, layerspacing=6.5cm, nodesize=25pt, nodespacing=1cm, title = {Proposed Feedforward Artificial Neural Network}, layertitleheight  = 0cm]
+		\newcommand{\nodetextclear}[2]{}
+		\newcommand{\nodetextx}[2]{$s_#2$}
+		\newcommand{\nodetexty}[2]{$m_#2$}
+		\inputlayer[count=8, bias=false, title=Input\\layer, text=\nodetextx]
+		\hiddenlayer[count=10, bias=false, title=Hidden\\layer, text=\nodetextclear] \linklayers
+		\outputlayer[count=2, title=Output\\layer, text=\nodetexty] \linklayers
+		
+		
+	
+	
+	\end{neuralnetwork}
+	
+	\subsection{Collected data}
+	
+	\begin{table}[H]
+\centering
+\caption{Collected input and target data}
+\label{my-label}
+\begin{tabular}{llllllllll}
+ir1 & ir2 & ir3 & ir4 & ir5 & ir6 & ir7 & ir8 & left target & right target \\
+0   & 0   & 0   & 0   & 0   & 0   & 0   & 0   & 0           & 0            \\
+0   & 0   & 0   & 1   & 0   & 0   & 0   & 0   & 75          & 75           \\
+0   & 0   & 0   & 0   & 1   & 0   & 0   & 0   & 75          & 75           \\
+0   & 0   & 0   & 1   & 1   & 0   & 0   & 0   & 75          & 75           \\
+0   & 0   & 1   & 1   & 1   & 0   & 0   & 0   & 75          & 75           \\
+0   & 0   & 0   & 1   & 1   & 1   & 0   & 0   & 75          & 75           \\
+0   & 0   & 1   & 0   & 0   & 0   & 0   & 0   & 0           & 81           \\
+0   & 0   & 1   & 1   & 0   & 0   & 0   & 0   & 0           & 81           \\
+0   & 1   & 1   & 1   & 0   & 0   & 0   & 0   & 0           & 81           \\
+0   & 1   & 0   & 0   & 0   & 0   & 0   & 0   & 0           & 85           \\
+1   & 1   & 0   & 0   & 0   & 0   & 0   & 0   & 0           & 85           \\
+1   & 1   & 1   & 0   & 0   & 0   & 0   & 0   & 0           & 85           \\
+1   & 0   & 0   & 0   & 0   & 0   & 0   & 0   & 0           & 89           \\
+0   & 0   & 0   & 0   & 0   & 1   & 0   & 0   & 81          & 0            \\
+0   & 0   & 0   & 0   & 1   & 1   & 0   & 0   & 81          & 0            \\
+0   & 0   & 0   & 0   & 1   & 1   & 1   & 0   & 81          & 0            \\
+0   & 0   & 0   & 0   & 0   & 0   & 1   & 0   & 85          & 0            \\
+0   & 0   & 0   & 0   & 0   & 0   & 1   & 1   & 85          & 0            \\
+0   & 0   & 0   & 0   & 0   & 1   & 1   & 1   & 85          & 0            \\
+0   & 0   & 0   & 0   & 0   & 0   & 0   & 1   & 89          & 0           
+\end{tabular}
+\end{table}
+	
 \end{document}
 
 	
