@@ -1,6 +1,6 @@
 #include <LineFollower.h>
 #include <NeuralNetworkConfig.h>
-#define NEURAL_NETWORK
+// #define NEURAL_NETWORK
 
 const u_int _speed = 100;
 
@@ -31,6 +31,6 @@ void loop()
 #else
 void loop()
 {
-  LineFollowingRobot.conditional_drive();
+  LineFollowingRobot.wireless_control(true);
 }
 #endif
