@@ -169,6 +169,76 @@ In this project, the conventional control system is being replaced by artificial
 			\includegraphics[width=0.5\textwidth, center]{data_classification_svm.png}
 			\caption{Support Vector Machine (SVM), an algorithm to classify data}
 		\end{figure}
+		
+		
+	\subsection{Model of an Artificial Neuron}
+	
+	An artificial neuron is a mathematical function conceived as a model of biological neurons. Artificial neurons are the constitutive units in an artificial neural network. Depending on the specific model used they may be called a semi-linear unit, Nv neuron, binary neuron, linear threshold function, or McCulloch–Pitts (MCP) neuron. The artificial neuron receives one or more inputs (representing dendrites) and sums them to produce an output (representing a neuron's axon). Usually the sums of each node are weighted, and the sum is passed through a non-linear function known as an activation function or transfer function. The transfer functions usually have a sigmoid shape, but they may also take the form of other non-linear functions, piecewise linear functions, or step functions. They are also often monotonically increasing, continuous, differentiable and bounded.
+	
+	\subsubsection{Basic structure}
+	
+	For a given artificial neuron, let there be $m + 1$ inputs with signals $x_{0}$ through $x_{m}$ and weights $w_{0}$ through $w_{m}$. Usually, the $x_{0}$ input is assigned the value $+1$, which makes it a bias input with $w_{k0} = b_{k}$. This leaves only $m$ actual inputs to the neuron: from $x_{1}$ to $x_{m}$.
+
+	The output of the $k_{th}$ neuron is:	
+	\begin{equation}
+		y_{k} = \phi \left( \sum_{j = 0}^{m}w_{kj}x_{j} \right)
+	\end{equation}
+	
+	Where $\phi$ (phi) is the transfer function.
+	
+	\begin{figure} [H]
+		\includegraphics[scale = 0.9, center]{Artificial_neuron.png}
+		\caption{Representation of an artificial neuron.}
+	\end{figure}
+	
+	The output is analogous to the axon of a biological neuron, and its value propagates to the input of the next layer, through a synapse. It may also exit the system, possibly as part of an output vector.
+
+It has no learning process as such. Its transfer function weights are calculated and threshold value are predetermined.
+
+
+	\subsubsection{Comparison to biological neurons}
+	
+	Artificial neurons are designed to mimic aspects of their biological counterparts.
+	
+	\begin{enumerate}
+		\item \textbf{Dendrites-} In a biological neuron, the dendrites act as the input vector. These dendrites allow the cell to receive signals from a large $(>1000)$ number of neighboring neurons. As in the above mathematical treatment, each dendrite is able to perform "multiplication" by that dendrite's "weight value." The multiplication is accomplished by increasing or decreasing the ratio of synaptic neurotransmitters to signal chemicals introduced into the dendrite in response to the synaptic neurotransmitter. A negative multiplication effect can be achieved by transmitting signal inhibitors (i.e. oppositely charged ions) along the dendrite in response to the reception of synaptic neurotransmitters.
+		
+		\item \textbf{Soma-}  In a biological neuron, the soma acts as the summation function, seen in the above mathematical description. As positive and negative signals (exciting and inhibiting, respectively) arrive in the soma from the dendrites, the positive and negative ions are effectively added in summation, by simple virtue of being mixed together in the solution inside the cell's body.
+		
+		\item \textbf{Axon-} The axon gets its signal from the summation behavior which occurs inside the soma. The opening to the axon essentially samples the electrical potential of the solution inside the soma. Once the soma reaches a certain potential, the axon will transmit an all-in signal pulse down its length. In this regard, the axon behaves as the ability for us to connect our artificial neuron to other artificial neurons.
+		
+	\end{enumerate}
+	
+	
+	\subsubsection{Types of transfer functions}
+	
+	The transfer function of a neuron is chosen to have a number of properties which either enhance or simplify the network containing the neuron. Crucially, for instance, any multilayer perceptron using a linear transfer function has an equivalent single-layer network; a non-linear function is therefore necessary to gain the advantages of a multi-layer network.
+
+Below, $u$ refers in all cases to the weighted sum of all the inputs to the neuron, i.e. for $n$ inputs,
+
+	\begin{equation}
+		u = \sum_{i=1}^n w_{i}x_{i}
+	\end{equation}
+	
+	where $w$ is a vector of \textit{synaptic weights} and \textbf{x} is a vector of inputs.
+	
+	\paragraph{Step Function}
+	
+	The output y of this transfer function is binary, depending on whether the input meets a specified threshold, $\theta$. The "signal" is sent, i.e. the output is set to one, if the activation meets the threshold.
+	
+	\[ y =
+		\begin{cases}
+		1 & \quad \text{if } u \geq \theta \\
+		0 & \quad \text{if } u < \theta \\
+		\end{cases}
+	\]
+	
+	\paragraph{Linear combination}
+	In this case, the output unit is simply the weighted sum of its inputs plus a bias term. A number of such linear neurons perform a linear transformation of the input vector. This is usually more useful in the first layers of a network. A number of analysis tools exist based on linear models, such as harmonic analysis, and they can all be used in neural networks with this linear neuron. The bias term allows us to make affine transformations to the data.
+	
+	\paragraph{Sigmoid}
+	A fairly simple non-linear function, a sigmoid function such as the logistic function also has an easily calculated derivative, which can be important when calculating the weight updates in the network. It thus makes the network more easily manipulable mathematically, and was attractive to early computer scientists who needed to minimize the computational load of their simulations.  \textbf{It is commonly seen in multilayer perceptrons using a backpropagation algorithm.}
+	
 	
 	\subsection{Artificial Neural Network}
 	In machine learning and cognitive science, artificial neural networks (ANNs) are a family of models inspired by biological neural networks (the central nervous systems of animals, in particular the brain) and are used to estimate or approximate functions that can depend on a large number of inputs and are generally unknown. Artificial neural networks are generally presented as systems of interconnected "neurons" which exchange messages between each other. The connections have numeric weights that can be tuned based on experience, making neural nets adaptive to inputs and capable of learning.
@@ -266,7 +336,7 @@ Clock Speed &	16 MHz \\ \hline
 Dimensions &	0.73" x 1.70" \\ \hline
 Length &	45 mm\\ \hline
 Width &	18 mm\\ \hline
-Weigth	& 5 g\\ \hline
+Weight	& 5 g\\ \hline
 	
 	\end{tabular}
 
@@ -330,7 +400,7 @@ Weigth	& 5 g\\ \hline
 	
 	\subsection{Premium Jumper Wire}
 	
-	I used male to male and male to female jumper connectors to connect the components together.
+	Male to male and male to female jumper connectors to connect the components together.
 	
 	\begin{figure}[H]
 		\includegraphics[center]{jumper.jpg}
@@ -338,6 +408,8 @@ Weigth	& 5 g\\ \hline
 	\end{figure}
 
 
+	
+	
 
 
 

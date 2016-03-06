@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 04:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.5)  6 MAR 2016 11:46
 entering extended mode
 **./report.tex
 (report.tex
@@ -331,123 +331,134 @@ File: data_classification_svm.png Graphic file (type png)
 <use data_classification_svm.png>
 Package pdftex.def Info: data_classification_svm.png used on input line 169.
 (pdftex.def)             Requested size: 227.62204pt x 245.26039pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [8 <./data_classification_svm.png>]
+<Artificial_neuron.png, id=45, 273.02pt x 187.70125pt>
+File: Artificial_neuron.png Graphic file (type png)
 
-Overfull \hbox (1.96196pt too wide) in paragraph at lines 174--175
+<use Artificial_neuron.png>
+Package pdftex.def Info: Artificial_neuron.png used on input line 190.
+(pdftex.def)             Requested size: 245.71573pt x 168.92957pt.
+ [9 <./Artificial_neuron.png>] [10]
+Overfull \hbox (1.96196pt too wide) in paragraph at lines 244--245
 \OT1/cmr/m/n/14.4 In ma-chine learn-ing and cog-ni-tive sci-ence, ar-ti-fi-cial
  neu-ral net-works (ANNs)
  []
 
-[8 <./data_classification_svm.png>]
+[11]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-
-<neural_net_example.png, id=45, 301.125pt x 362.35374pt>
+ <neural_net_example.png, id=58, 301.125pt x 362.35374pt>
 File: neural_net_example.png Graphic file (type png)
 
 <use neural_net_example.png>
-Package pdftex.def Info: neural_net_example.png used on input line 183.
+Package pdftex.def Info: neural_net_example.png used on input line 253.
 (pdftex.def)             Requested size: 182.09485pt x 219.12793pt.
 
-<Feed_forward_neural_net.png, id=46, 286.06876pt x 331.2375pt>
+<Feed_forward_neural_net.png, id=59, 286.06876pt x 331.2375pt>
 File: Feed_forward_neural_net.png Graphic file (type png)
 
 <use Feed_forward_neural_net.png>
-Package pdftex.def Info: Feed_forward_neural_net.png used on input line 195.
+Package pdftex.def Info: Feed_forward_neural_net.png used on input line 265.
 (pdftex.def)             Requested size: 182.09485pt x 210.849pt.
- [9 <./neural_net_example.png>]
-<XOR_perceptron_net.png, id=51, 250.9375pt x 248.93pt>
+ [12 <./neural_net_example.png>]
+<XOR_perceptron_net.png, id=64, 250.9375pt x 248.93pt>
 File: XOR_perceptron_net.png Graphic file (type png)
 
 <use XOR_perceptron_net.png>
-Package pdftex.def Info: XOR_perceptron_net.png used on input line 206.
+Package pdftex.def Info: XOR_perceptron_net.png used on input line 276.
 (pdftex.def)             Requested size: 182.09485pt x 180.64624pt.
- [10 <./Feed_forward_neural_net.png> <./XOR_perceptron_net.png>] [11] <ArduinoN
-anoFront_3_sm.jpg, id=60, 451.6875pt x 297.11pt>
+ [13 <./Feed_forward_neural_net.png> <./XOR_perceptron_net.png>] [14] <ArduinoN
+anoFront_3_sm.jpg, id=74, 451.6875pt x 297.11pt>
 File: ArduinoNanoFront_3_sm.jpg Graphic file (type jpg)
 
 <use ArduinoNanoFront_3_sm.jpg>
-Package pdftex.def Info: ArduinoNanoFront_3_sm.jpg used on input line 237.
+Package pdftex.def Info: ArduinoNanoFront_3_sm.jpg used on input line 307.
 (pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
 
-<ArduinoNanoBack_3_sm.jpg, id=61, 451.6875pt x 297.11pt>
+<ArduinoNanoBack_3_sm.jpg, id=75, 451.6875pt x 297.11pt>
 File: ArduinoNanoBack_3_sm.jpg Graphic file (type jpg)
 
 <use ArduinoNanoBack_3_sm.jpg>
-Package pdftex.def Info: ArduinoNanoBack_3_sm.jpg used on input line 242.
+Package pdftex.def Info: ArduinoNanoBack_3_sm.jpg used on input line 312.
 (pdftex.def)             Requested size: 225.84319pt x 148.55463pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []\OT1/cmr/m/n/14.4 Operating Volt-age
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 261--261
+Underfull \hbox (badness 1158) in paragraph at lines 331--331
 []\OT1/cmr/m/n/14.4 DC Cur-rent per I/O
  []
 
 
-Overfull \hbox (52.45276pt too wide) in paragraph at lines 252--272
+Overfull \hbox (52.45276pt too wide) in paragraph at lines 322--342
 [] 
  []
 
-[12 <./ArduinoNanoFront_3_sm.jpg> <./ArduinoNanoBack_3_sm.jpg>]
-<qtr.jpg, id=65, 803.0pt x 554.07pt>
+[15 <./ArduinoNanoFront_3_sm.jpg> <./ArduinoNanoBack_3_sm.jpg>]
+<qtr.jpg, id=79, 803.0pt x 554.07pt>
 File: qtr.jpg Graphic file (type jpg)
  <use qtr.jpg>
-Package pdftex.def Info: qtr.jpg used on input line 279.
+Package pdftex.def Info: qtr.jpg used on input line 349.
 (pdftex.def)             Requested size: 224.83847pt x 155.13853pt.
 
-<l298n.jpg, id=66, 602.25pt x 477.82515pt>
+<l298n.jpg, id=80, 602.25pt x 477.82515pt>
 File: l298n.jpg Graphic file (type jpg)
  <use l298n.jpg>
-Package pdftex.def Info: l298n.jpg used on input line 288.
+Package pdftex.def Info: l298n.jpg used on input line 358.
 (pdftex.def)             Requested size: 301.12425pt x 238.91199pt.
- [13 <./qtr.jpg>]
-<lipo.jpg, id=71, 150.453pt x 90.009pt>
+ [16 <./qtr.jpg>]
+<lipo.jpg, id=84, 150.453pt x 90.009pt>
 File: lipo.jpg Graphic file (type jpg)
  <use lipo.jpg>
-Package pdftex.def Info: lipo.jpg used on input line 297.
+Package pdftex.def Info: lipo.jpg used on input line 367.
 (pdftex.def)             Requested size: 150.45264pt x 90.00876pt.
- [14 <./l298n.jpg> <./lipo.jpg>] <hc05.jpg, id=75, 225.84375pt x 225.84375pt>
+ [17 <./l298n.jpg> <./lipo.jpg>] <hc05.jpg, id=88, 225.84375pt x 225.84375pt>
 File: hc05.jpg Graphic file (type jpg)
  <use hc05.jpg>
-Package pdftex.def Info: hc05.jpg used on input line 318.
+Package pdftex.def Info: hc05.jpg used on input line 388.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
 
-<breadboard.jpg, id=76, 149.4675pt x 99.864pt>
+<breadboard.jpg, id=89, 149.4675pt x 99.864pt>
 File: breadboard.jpg Graphic file (type jpg)
  <use breadboard.jpg>
-Package pdftex.def Info: breadboard.jpg used on input line 327.
+Package pdftex.def Info: breadboard.jpg used on input line 397.
 (pdftex.def)             Requested size: 149.46712pt x 99.86374pt.
- [15 <./hc05.jpg>] <jumper.jpg, id=80, 124.83pt x 93.6225pt>
+ [18 <./hc05.jpg>] <jumper.jpg, id=93, 124.83pt x 93.6225pt>
 File: jumper.jpg Graphic file (type jpg)
  <use jumper.jpg>
-Package pdftex.def Info: jumper.jpg used on input line 336.
+Package pdftex.def Info: jumper.jpg used on input line 406.
 (pdftex.def)             Requested size: 124.82968pt x 93.62225pt.
- [16 <./breadboard.jpg> <./jumper.jpg>] (report.aux) ) 
+ [19 <./breadboard.jpg> <./jumper.jpg>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 4584 strings out of 493634
- 64715 string characters out of 3149412
- 130827 words of memory out of 3000000
- 7891 multiletter control sequences out of 15000+200000
+ 4589 strings out of 493634
+ 64839 string characters out of 3149412
+ 130828 words of memory out of 3000000
+ 7895 multiletter control sequences out of 15000+200000
  13682 words of font info for 48 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 28i,8n,34p,889b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,9n,34p,892b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mbxti10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
-b><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (16 pages, 4085590 bytes).
+X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb>
+Output written on report.pdf (19 pages, 4118559 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
